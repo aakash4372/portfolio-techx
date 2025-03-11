@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font1: "Montserrat Alternates", sans-serif;
+}
+
+/* General Styles */
+.home-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add a background image */
+.home-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; /* Adjust width as needed */
+    height: 100%;
+    background-image: url('/image/download.png') !important; /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center right;
+    opacity: 0.3; /* Adjust opacity if needed */
+    z-index: 0;
+}
+
+/* Ensure content stays above the background */
+.heading-container,
+.top-image,
+.book-button {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Image Styling */
+.top-image {
+    width: 250px; /* Increased size */
+    height: 250px;
+    margin-bottom: 20px;
+    transition: filter 0.5s ease;
+}
+
+.grayscale {
+    filter: grayscale(100%) brightness(20%);
+}
+
+/* Toggle Switch */
+.toggle-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    position: relative;
+}
+
+/* Hide the checkbox */
+.toggle-input {
+    display: none;
+}
+
+/* Heading Styles */
+.display-4 {
+    font-size: 100px; /* Increased text size */
+    font-weight: bold;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.sub-heading {
+    font-size: 100px; /* Increased text size */
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Toggle slider - Bigger size */
+.toggle-slider {
+    width: 180px; /* Increased width */
+    height: 80px; /* Increased height */
+    background-color: #444;
+    border-radius: 80px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 4px solid white;
+    transition: background 0.3s;
+}
+
+/* Toggle circle - Bigger size */
+.toggle-slider span {
+    width: 65px; /* Increased width */
+    height: 65px; /* Increased height */
+    background: radial-gradient(circle at top, rgb(255, 255, 255) 5%, rgba(255, 255, 255, 0.815) 15%, transparent 30%),
+                linear-gradient(to bottom, #fae76c, #ffee00, #eccd03);
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+/* Move toggle when checked */
+.toggle-input:checked + .toggle-slider span {
+    transform: translateX(90px); /* Adjusted for larger size */
+}
+
+/* Button Styling */
+.book-button {
+    background-color: #ffe21e;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem; /* Bigger text */
+    padding: 16px 32px; /* Bigger button */
+    border-radius: 32px;
+    margin-top: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.book-button:hover {
+    background-color: #f1c40f;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    .display-4 {
+        font-size: 4rem;
+    }
+    .sub-heading {
+        font-size: 2.5rem;
+    }
+    .toggle-slider {
+        width: 130px;
+        height: 60px;
+    }
+    .top-image {
+        width: 200px;
+        height: 200px;
+    }
+    .toggle-slider span {
+        width: 45px;
+        height: 45px;
+    }
+    .toggle-input:checked + .toggle-slider span {
+        transform: translateX(75px);
+    }
+    .book-button {
+        font-size: 1.3rem;
+        padding: 14px 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 4rem;
+    }
+    .sub-heading {
+        font-size: 2rem;
+    }
+    .toggle-slider {
+        width: 110px;
+        height: 50px;
+    }
+    .toggle-slider span {
+        width: 40px;
+        height: 40px;
+    }
+    .toggle-input:checked + .toggle-slider span {
+        transform: translateX(65px);
+    }
+    .book-button {
+        font-size: 1.2rem;
+        padding: 12px 24px;
+    }
+    .top-image {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+@media (max-width: 480px) {
+    .display-4 {
+        font-size: 4.5rem;
+    }
+    .sub-heading {
+        font-size: 1.8rem;
+    }
+    .toggle-slider {
+        width: 100px;
+        height: 50px;
+    }
+    .toggle-slider span {
+        width: 40px;
+        height: 40px;
+    }
+    .toggle-input:checked + .toggle-slider span {
+        transform: translateX(50px);
+    }
+    .book-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .top-image {
+        width: 160px;
+        height: 160px;
+    }
+}
