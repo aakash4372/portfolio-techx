@@ -1,0 +1,36 @@
+.marquee-container {
+    overflow: hidden;
+    background-color: #000000;
+    padding: 20px 0;
+  }
+  
+  .marquee-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .marquee {
+    display: flex;
+    animation: marquee-scroll 15s linear infinite;
+    width: 200%;
+  }
+  
+  .marquee-img {
+    width: 150px; /* Adjust size */
+    height: auto;
+    margin: 0 15px;
+    border-radius: 10px;
+  }
+  
+  @keyframes marquee-scroll {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  

@@ -11,82 +11,84 @@ const Header = () => {
 
   return (
     <div className="navbar-section1">
-      <Navbar expand="lg" className="custom-navbar">
-        <div className="container-fluid">
-          {/* Logo on the left */}
-          <Navbar.Brand href="#" className="logo">
-            <span className="logo-suffix">U1CORE</span>
-          </Navbar.Brand>
+      <div>
+        <Navbar expand="lg" className="custom-navbar">
+          <div className="container-fluid">
+            {/* Logo on the left */}
+            <Navbar.Brand href="#" className="logo">
+              <span className="logo-suffix">U1CORE</span>
+            </Navbar.Brand>
 
-          {/* Offcanvas menu toggle */}
-          <Navbar.Toggle
-            aria-controls="offcanvasNavbar"
-            className="offcanvas-toggle"
-            onClick={() => setShow(true)}
-          />
+            {/* Offcanvas menu toggle */}
+            <Navbar.Toggle
+              aria-controls="offcanvasNavbar"
+              className="offcanvas-toggle"
+              onClick={() => setShow(true)}
+            />
 
-          {/* Full-screen Offcanvas menu */}
-          <Navbar.Offcanvas
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
-            className="custom-offcanvas"
-            show={show}
-            onHide={() => setShow(false)}
-            placement="start"
-            backdrop={true}
-          >
-            <Offcanvas.Header closeButton>
-              <Offcanvas.Title id="offcanvasNavbarLabel">
-                U1CORE
-              </Offcanvas.Title>
-            </Offcanvas.Header>
-            <Offcanvas.Body>
-              <Nav className="nav-links mx-auto">
-                {/* Dropdown for Services */}
-                <NavDropdown
-                  title="Services"
-                  id="services-dropdown"
-                  className="custom-dropdown"
-                  show={dropdownOpen}
-                  onMouseEnter={() => setDropdownOpen(true)}
-                  onMouseLeave={() => setDropdownOpen(false)}
-                >
-                  <NavDropdown.Item href="#">
-                    <span className="icon-box">
-                      <FaLaptopCode className="dropdown-icon" />
-                    </span>
-                    Web Design
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#">
-                    <span className="icon-box">
-                      <FaPaintBrush className="dropdown-icon" />
-                    </span>
-                    UI/UX Design
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#">
-                    <span className="icon-box">
-                      <FaCube className="dropdown-icon" />
-                    </span>
-                    Product Design
-                  </NavDropdown.Item>
-                </NavDropdown>
+            {/* Full-screen Offcanvas menu */}
+            <Navbar.Offcanvas
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+              className="custom-offcanvas"
+              show={show}
+              onHide={() => setShow(false)}
+              placement="start"
+              backdrop={true}
+            >
+              <Offcanvas.Header closeButton className="offcanvas-header">
+                <Offcanvas.Title id="offcanvasNavbarLabel">
 
-                <Nav.Link href="#" className="custom-nav-link">
-                  Cases
-                </Nav.Link>
-              </Nav>
-            </Offcanvas.Body>
-          </Navbar.Offcanvas>
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body>
+                <Nav className="nav-links">
+                  {/* Dropdown for Services */}
+                  <NavDropdown
+                    title="Services"
+                    id="services-dropdown"
+                    className="custom-dropdown"
+                    show={dropdownOpen}
+                    onMouseEnter={() => setDropdownOpen(true)}
+                    onMouseLeave={() => setDropdownOpen(false)}
+                  >
+                    <NavDropdown.Item href="#">
+                      <span className="icon-box">
+                        <FaLaptopCode className="dropdown-icon" />
+                      </span>
+                      Web Design
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#">
+                      <span className="icon-box">
+                        <FaPaintBrush className="dropdown-icon" />
+                      </span>
+                      UI/UX Design
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#">
+                      <span className="icon-box">
+                        <FaCube className="dropdown-icon" />
+                      </span>
+                      Product Design
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                  <Nav.Link href="#" className="custom-nav-link">
+                    Cases
+                  </Nav.Link>
+                </Nav>
+              </Offcanvas.Body>
+            </Navbar.Offcanvas>
 
-          {/* Contact button aligned to the right */}
-          <Button className="contact-btn ms-auto">
-            Contact Us
-            <span className="icon-circle">
-              <GiFeather className="feather-icon" />
-            </span>
-          </Button>
-        </div>
-      </Navbar>
+
+            {/* Contact button aligned to the right */}
+            <Button className="contact-btn ms-auto">
+              Contact Us
+              <span className="icon-circle">
+                <GiFeather className="feather-icon" />
+              </span>
+            </Button>
+          </div>
+        </Navbar>
+      </div>
     </div>
   );
 };

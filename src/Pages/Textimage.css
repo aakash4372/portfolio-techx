@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font2: "Commissioner", sans-serif;
+}
+
+.hero-section {
+  background-color: black;
+  font-family: var(--font2);
+  color: white;
+  padding: 60px 0;
+}
+
+.brand-btn {
+  background: #111111;
+  border: none;
+  color: white;
+  border: 2px solid #515151;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #ffd700;
+  /* Yellow */
+}
+
+p {
+  max-width: 500px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: grey; /* Initial grey color */
+  transition: color 0.5s ease-in-out; /* Smooth color transition */
+}
+
+p:hover {
+  color: white; /* Changes to white on hover */
+}
+
+
+.image-section {
+  text-align: right;
+}
+
+.hero-image {
+  max-width: 50%;
+  height: auto;
+  filter: drop-shadow(0px 0px 10px rgba(255, 221, 0, 0.5));
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .image-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .hero-image {
+    max-width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  p{
+    font-size: 18px;
+  }
+
+  .hero-image {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-image {
+    max-width: 60%;
+  }
+}
