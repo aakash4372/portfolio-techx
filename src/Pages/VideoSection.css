@@ -1,8 +1,9 @@
 /* Video Section */
-.video-large {
+.Videosection .video-large {
   width: 100%;
   max-width: 2500px !important; /* Increase max width */
   height: auto;
+  background: none;
   border-radius: 25px !important;
   display: block;
   object-fit: cover; /* Ensures video fills the container */
@@ -21,16 +22,11 @@
 }
 
 /* Main Container */
-.bg-dark {
-  background-color: #121212 !important;
-}
 
-/* Card Styling */
-.bg-black {
-  background-color: #1b1b1b !important;
-}
 
-.video-card {
+
+
+.Videosection .video-card {
   min-height: 500px; /* Increase height */
   display: flex;
   align-items: center; /* Center content vertically */
@@ -41,7 +37,7 @@
   border-radius: 25px;
 }
 
-.bottom-left-image {
+.Videosection .bottom-left-image {
   position: absolute;
   bottom: -10px;
   left: -40px;
@@ -62,41 +58,41 @@
 
 
 /* Heading Styles */
-h2 {
+.Videosection h2 {
   font-size: 3rem !important;
   line-height: 1.3 !important;
   color: white;
 }
 
-.text-warning {
+.Videosection .text-warning {
   color: #ffc107 !important;
 }
 
 /* Profile Images & Avatar Group */
-.MuiAvatar-root {
+.Videosection .MuiAvatar-root {
   width: 50px !important; /* Increased avatar size */
   height: 50px !important;
   border: 2px solid #ffc107 !important;
   transition: transform 0.3s ease-in-out;
 }
 
-.MuiAvatar-root:hover {
+.Videosection .MuiAvatar-root:hover {
   transform: scale(1.1);
 }
 
 
-.MuiAvatarGroup-root {
+.Videosection .MuiAvatarGroup-root {
   justify-content: end;
 }
 
 /* Stats Section */
-.card-row {
+.Videosection .card-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.stats-box {
+.Videosection .stats-box {
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   padding: 20px;
@@ -107,37 +103,37 @@ h2 {
 }
 
 @media (max-width: 1024px) {
-  .video-card {
+  .Videosection .video-card {
     min-height: 400px;
     padding: 20px;
   }
 
-  h2 {
+  .Videosection h2 {
     font-size: 2.5rem !important;
   }
 
-  .stats-box {
+  .Videosection .stats-box {
     min-width: 200px;
   }
 }
 
 @media (max-width: 768px) {
-  .video-large {
+  .Videosection .video-large {
     max-width: 100% !important;
     border-radius: 20px !important;
   }
 
-  h2 {
+  .Videosection h2 {
     font-size: 2rem !important;
     text-align: center;
   }
 
-  .stats-box {
+  .Videosection .stats-box {
     min-width: 180px;
     padding: 15px;
   }
 
-  .MuiAvatar-root {
+  .Videosection .MuiAvatar-root {
     width: 40px !important;
     height: 40px !important;
   }
@@ -145,21 +141,21 @@ h2 {
 }
 
 @media (max-width: 480px) {
-  .video-card {
+  .Videosection .video-card {
     min-height: 350px;
     padding: 15px;
   }
 
-  h2 {
+  .Videosection h2 {
     font-size: 1.5rem !important;
   }
 
-  .stats-box {
+  .Videosection .stats-box {
     min-width: 150px;
     padding: 10px;
   }
 
-  .MuiAvatar-root {
+  .Videosection .MuiAvatar-root {
     width: 35px !important;
     height: 35px !important;
   }
@@ -168,21 +164,21 @@ h2 {
 }
 
 @media (max-width: 375px) {
-  .video-card {
+  .Videosection .video-card {
     min-height: 350px;
     padding: 15px;
   }
 
-  h2 {
+  .Videosection h2 {
     font-size: 1.5rem !important;
   }
 
-  .stats-box {
+  .Videosection .stats-box {
     min-width: 150px;
     padding: 10px;
   }
 
-  .MuiAvatar-root {
+  .Videosection .MuiAvatar-root {
     width: 35px !important;
     height: 35px !important;
   }

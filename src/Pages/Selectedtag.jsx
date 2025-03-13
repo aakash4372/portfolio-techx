@@ -4,27 +4,17 @@ import { FaPlus, FaTimes } from "react-icons/fa";
 import { TbDragDrop } from "react-icons/tb";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Selectedtag.css";
+import { TbArrowLeft } from "react-icons/tb";
 
 const servicesData = {
   "Design": ["UI/UX Design", "Graphic Design"],
   "Branding & Marketing": ["Branding", "SEO/ASO"],
   "Development": ["WordPress Development", "Webflow Development"],
-  "Copywriting & Content": ["Copywriting", "UX Audit"],
+  "Copywriting & Content": ["Copywriting", "UX Audit", "aakash", "car", "bus"],
   "Audits & Strategies": ["Usability Testing"],
-  "Audits2 & Strategies": ["Usability Testing"],
-  "Audits3 & Strategies": ["Usability Testing"],
-};
-
-const contentData = {
-  "UI/UX Design": "We create user-friendly designs with a focus on UX principles.",
-  "Graphic Design": "High-quality graphics and visuals tailored for your brand.",
-  "Branding": "Comprehensive branding strategies for your business.",
-  "SEO/ASO": "Optimize your online presence for search engines.",
-  "WordPress Development": "Custom WordPress solutions for your website.",
-  "Webflow Development": "Modern Webflow website development.",
-  "Copywriting": "Engaging content creation for your brand.",
-  "UX Audit": "A deep dive into your UI/UX for better performance.",
-  "Usability Testing": "Improve user experience through real-world testing."
+  "one": ["test1 Testing2"],
+  "one2": ["test11 Testing3"],
+  "one3": ["test111 Testing5"],
 };
 
 const Selectedtag = () => {
@@ -58,78 +48,76 @@ const Selectedtag = () => {
   };
 
   return (
-    <div className="selectedtag-section mb-5">
-      <Container className="design-order">
-      <h2 className="text-center mb-5 text-dark">Collect your design order</h2>
-      <Row className="row mb-5">
-        {/* Left Panel - Services */}
-        <Col lg={5} className="left-panel">
-          <Accordion className="dark-accordion">
-            {Object.keys(remainingServices).map((category, index) => (
-              <Accordion.Item eventKey={index.toString()} key={category} className="dark-card">
-                <Accordion.Header>{category}</Accordion.Header>
-                <Accordion.Body>
-                  {remainingServices[category].length > 0 ? (
-                    remainingServices[category].map((service) => (
-                      <Button
-                        key={service}
-                        variant="outline-light"
-                        className="service-btn"
-                        onClick={() => addService(service)}
-                      >
-                        {service} <FaPlus />
-                      </Button>
-                    ))
-                  ) : (
-                    <p className="text-muted">No services available</p>
-                  )}
-                </Accordion.Body>
-              </Accordion.Item>
-            ))}
-          </Accordion>
+    <div className="selectedtag-section">
+      <Container className="design-order container">
+        <h1 className="text-center mb-5 text-dark">Collect your design order</h1>
+        <Row className="selectedtag-row">
+          {/* Left Panel - Services */}
+          <Col lg={5} className="left-panel">
+            <Accordion className="dark-accordion">
+              {Object.keys(remainingServices).map((category, index) => (
+                <Accordion.Item eventKey={index.toString()} key={category} className="dark-card">
+                  <Accordion.Header>
+                    {category} ({remainingServices[category].length})
+                  </Accordion.Header>
+                  <Accordion.Body>
+                    {remainingServices[category].length > 0 ? (
+                      remainingServices[category].map((service) => (
+                        <Button
+                          key={service}
+                          className="service-btn"
+                          onClick={() => addService(service)}
+                        >
+                          <span>{service}</span>
+                          <FaPlus />
+                        </Button>
+                      ))
+                    ) : (
+                      <p className="text-white">No services available</p>
+                    )}
+                  </Accordion.Body>
+                </Accordion.Item>
+              ))}
+            </Accordion>
+          </Col>
 
-        </Col>
+          {/* Right Panel - Selected Services */}
+          <Col lg={7} className="right-panel">
+            <Card className="selected-services dark-card">
+              <Card.Body className="right-panel-body">
+                {selectedServices.length === 0 ? (
+                  <div className="empty-state text-center">
+                    <TbDragDrop size={80} className="drag-icon text-white" />
+                    <p className="text-white">Select necessary services</p>
+                  </div>
+                ) : (
+                  selectedServices.map((service) => (
+                    <span
+                      key={service}
+                      className="selected-tag"
+                      onClick={() => setSelectedContent(service)}
+                    >
+                      {service} <FaTimes onClick={() => removeService(service)} />
+                    </span>
+                  ))
+                )}
+              </Card.Body>
+            </Card>
 
-        {/* Right Panel - Selected Services */}
-        <Col lg={7} className="right-panel">
-          <Card className="selected-services dark-card">
-            <Card.Body>
-              {selectedServices.length === 0 ? (
-                <div className="empty-state">
-                  <TbDragDrop size={40} className="drag-icon text-white" />
-                  <p className="text-muted">Select necessary services</p>
-                </div>
-              ) : (
-                selectedServices.map((service) => (
-                  <span
-                    key={service}
-                    className="selected-tag"
-                    onClick={() => setSelectedContent(service)}
-                  >
-                    {service} <FaTimes onClick={() => removeService(service)} />
-                  </span>
-                ))
-              )}
-            </Card.Body>
-          </Card>
+            {/* Content Card */}
+            <Card className="content-card mt-3 dark-card">
+              <Card.Body className="leftside-box d-flex align-items-center">
+                <TbArrowLeft size={20} className="text-white me-2" />
+                <p className="text-white m-0">Select a service to see details</p>
+              </Card.Body>
+            </Card>
 
-          {/* Content Card (Black Theme) */}
-          <Card className="content-card mt-3 dark-card">
-            <Card.Body>
-              {selectedContent ? (
-                <p className="text-white">{contentData[selectedContent]}</p>
-              ) : (
-                <p className="text-muted">Select a service to see details</p>
-              )}
-            </Card.Body>
-          </Card>
-
-          <div className="right-bottom-btn">
-            <Button variant="primary">Proceed</Button>
-          </div>
-        </Col>
-      </Row>
-    </Container>
+            <div className="right-bottom-btn mt-4">
+              <Button className="proceed" variant="primary">Proceed</Button>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };
