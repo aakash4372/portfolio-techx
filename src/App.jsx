@@ -12,7 +12,7 @@ import Questionandanswer from './Pages/Questionandanswer'
 import Footer from './Pages/Footer'
 import Bestchoices from './Pages/Bestchoices'
 import Textimage from './Pages/textimage'
-
+import Cardeffort from './Pages/cardeffort'
 
 export default function App() {
   return (
@@ -26,7 +26,7 @@ export default function App() {
       <WhyChooseUs/>
       <Imagemarqueeslide/>
       <Questionandanswer/>
-
+      <Cardeffort/>
       <Bestchoices/>
       <Footer/>
     </div>
