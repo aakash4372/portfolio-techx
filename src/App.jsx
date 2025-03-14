@@ -13,6 +13,7 @@ import Footer from './Pages/Footer'
 import Bestchoices from './Pages/Bestchoices'
 import Textimage from './Pages/textimage'
 
+
 export default function App() {
   return (
     <div>
@@ -25,6 +26,7 @@ export default function App() {
       <WhyChooseUs/>
       <Imagemarqueeslide/>
       <Questionandanswer/>
+
       <Bestchoices/>
       <Footer/>
     </div>

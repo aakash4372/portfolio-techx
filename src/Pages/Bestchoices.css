@@ -1,119 +1,185 @@
-/* Responsive table container */
+/* Bestchoices.css */
+
 .table-section {
   overflow-x: auto;
   background-color: #010101;
-  max-width: 100%;
   padding: 20px;
+  max-width: 100%;
+  position: relative;
 }
 
-/* Increase text sizes for better readability */
-.table th, .table td {
-  font-size: 1.2rem;
-  padding: 15px;
-  height: 100%;
+.table-section::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-section::-webkit-scrollbar-thumb {
+  background: #ffdd57;
+  border-radius: 10px;
+}
+
+.table-section::-webkit-scrollbar-track {
+  background: #202020;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0 10px;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
   vertical-align: middle;
-  text-align: center;
   border: none;
 }
 
-/* Style the table headers */
+.first-one {
+  font-weight: 500 !important;
+}
+
 .table thead tr th {
   background-color: #010101 !important;
   color: #fff !important;
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-  border: none;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
-/* Make the table wider */
-.table {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  table-layout: fixed;
-  border-collapse: collapse;
-  border: none;
+.table th:nth-child(1),
+.table td:nth-child(1) {
+  width: 25%;
 }
 
-/* Remove top and bottom lines */
-.table thead tr {
-  border-top: none;
-  border-bottom: none;
+.table th:nth-child(2),
+.table td:nth-child(2),
+.table th:nth-child(3),
+.table td:nth-child(3),
+.table th:nth-child(4),
+.table td:nth-child(4),
+.table th:nth-child(5),
+.table td:nth-child(5) {
+  width: 18.75%;
 }
 
 
-/* Remove all borders from table rows */
-.table tbody tr {
-  border-top: none;
-  border: none;
+/* Apply glowing effect to the entire column */
+.glowing-column {
+  background-color: #ffdd57 !important;
+  animation: glow 1.5s infinite alternate;
+  color: #010101 !important;
+  /* Dark text for contrast */
+  font-weight: bold;
+  border-left: 1px solid #ffffff52 !important;
+  /* Left border */
+  border-right: 1px solid #ffffff52 !important;
+  /* Right border */
+
 }
 
-/* Fix: Apply colors to rows using class-based approach */
-.odd-row td {
-  background-color: #010101 !important; /* Black for odd rows */
+.one-border {
+  border-top: 1px solid #ffffff52 !important;
+}
+
+.two-border {
+  border-bottom: 1px solid #ffffff52 !important;
+
+}
+
+
+
+.odd-row td,
+.even-row td,
+.button-td td {
+  background-color: #010101 !important;
   color: #fff !important;
-  
+  height: 90px;
+  /* Set a uniform height for all rows */
+  vertical-align: middle;
 }
+
 .even-row td {
-  background-color: #101010 !important; /* Grey for even rows */
-  color: #fff !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.178);
-
-  
-}
-td {
-  background-color: #010101 !important; /* Black for odd rows */
-  color: #fff !important;
-  
+  background-color: #101010 !important;
+  border-bottom: 0.4px solid rgba(255, 255, 255, 0.226);
 }
 
 
 
-/* Adjust font sizes for smaller screens */
-@media (max-width: 992px) {
-  .table th, .table td {
-    font-size: 1.1rem;
-    padding: 12px;
-  }
+.button-td .btn {
+  font-size: 14px;
+  padding: 8px 20px;
+  background: url('/image/dotbutton.png') no-repeat center/cover, #f4cb00ef !important;
+  color: black;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 30px;
+}
+
+
+.button-td .btn:hover {
+  background: url('/image/dotbutton.png') no-repeat center/cover, #c49f0c !important;
+  color: black !important;
+}
+
+
+.table-section h2 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  font-family: var(--font2);
+}
+
+@media (max-width: 991.98px) {
   .table-section {
-    overflow-x: auto;
+    padding: 10px;
+  }
+
+  .table-section h2 {
+    font-size: 3rem;
+  }
+  .table-responsive {
+    overflow-x: scroll;
+  }
+
+  .table {
+    font-size: 14px;
+  }
+
+  .table th,
+  .table td {
+    padding: 8px 10px;
     white-space: nowrap;
   }
-  .table {
-    min-width: 900px;
+
+  .button-td .btn {
+    font-size: 12px;
+    padding: 6px 15px;
   }
 }
 
+.table th,
+.table td {
+  min-width: 120px;
+}
+
+.table th:first-child,
+.table td:first-child {
+  min-width: 200px;
+}
+
+
 @media (max-width: 768px) {
-  .table th, .table td {
-    font-size: 1rem;
-    padding: 10px;
+  .table-section h2 {
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 576px) {
-  .table th, .table td {
-    font-size: 0.9rem;
-    padding: 8px;
+  .table-section h2 {
+    font-size: 2rem;
   }
-}
-
-/* Make the entire U1Core column yellow with a glow effect */
-.table tbody tr td:nth-child(2),
-.table thead tr th:nth-child(2) {
-  font-weight: bold;
-  transition: box-shadow 0.3s ease-in-out;
-}
-
-/* Glow effect on hover for U1Core column */
-.table tbody tr td:nth-child(2):hover {
-  box-shadow: 0 0 15px #ffdd57;
-}
-
-/* Style the button */
-.table tbody tr td button {
-  font-size: 1.2rem;
-  padding: 12px 20px;
-  border: none;
 }

@@ -18,39 +18,51 @@ const BestChoiceComparison = () => {
 
   return (
     <div className="table-section">
-      <Table bordered hover responsive className="text-center mt-5">
-        <thead>
-          <tr className="table-warning">
-            <th></th>
-            <th>
-              <img src="https://www.u1core.com/wp-content/themes/u1core/img/logo/logo.svg" alt="U1Core Logo" width="140" />
-            </th>
-            <th>Agency</th>
-            <th>Freelancers</th>
-            <th>Hiring</th>
-          </tr>
-        </thead>
-        <tbody>
-          {data.map((row, index) => (
-            <tr key={index} className={index % 2 === 0 ? "odd-row" : "even-row"}>
-              <td className="fw-bold">{row.feature}</td>
-              <td>{row.u1core}</td>
-              <td>{row.agency}</td>
-              <td>{row.freelancers}</td>
-              <td>{row.hiring}</td>
+      <h2 className="text-center fw-bold pt-5 pb-5 mb-5">
+      Your best сhoice
+        </h2>
+      <div className="table-responsive container">
+        <Table className="text-center">
+          <thead>
+            <tr className="table-warning">
+              <th></th>
+              <th className="glowing-column glowing-border one-border">
+                <img
+                  src="https://www.u1core.com/wp-content/themes/u1core/img/logo/logo.svg"
+                  alt="U1Core Logo"
+                  width="120"
+                />
+              </th>
+              <th>Agency</th>
+              <th>Freelancers</th>
+              <th>Hiring</th>
             </tr>
-          ))}
-          <tr>
-            <td></td>
-            <td className="button-td">
-              <Button variant="warning">Choose us</Button>
-            </td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-        </tbody>
-      </Table>
+          </thead>
+
+          <tbody>
+            {data.map((row, index) => (
+              <tr key={index} className={index % 2 === 0 ? "odd-row" : "even-row"}>
+                <td className="fw-bold text-start first-one" style={{ fontWeight: '300' }}>{row.feature}</td>
+                <td className="glowing-column glowing-border">{row.u1core}</td>
+
+                <td>{row.agency}</td>
+                <td>{row.freelancers}</td>
+                <td>{row.hiring}</td>
+              </tr>
+            ))}
+            <tr className="button-td">
+              <td></td>
+              <td className="glowing-column glowing-border two-border">
+                <Button variant="warning" className="btn">Choose us</Button>
+              </td>
+
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </Table>
+      </div>
     </div>
   );
 };

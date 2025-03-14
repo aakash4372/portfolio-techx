@@ -1,0 +1,28 @@
+.custom-card {
+    background-color: #121212; /* Dark background */
+    color: #fff; /* White text */
+    border-radius: 12px; /* Smooth corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+.card-img {
+    width: 180px; /* Adjust image width */
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-body {
+    flex: 1; /* Ensure content takes up space */
+}
+
+.btn-warning {
+    background-color: #FFD700; /* Yellow color */
+    color: #000;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+.btn-warning:hover {
+    background-color: #FFC107; /* Slightly darker yellow on hover */
+}
