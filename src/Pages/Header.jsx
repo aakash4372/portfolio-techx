@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Button, Offcanvas, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./header.css";
+import "./Header.css";
 import { GiFeather } from "react-icons/gi";
 import { FaLaptopCode, FaPaintBrush, FaCube } from "react-icons/fa"; // Import icons
 
