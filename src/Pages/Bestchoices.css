@@ -1,0 +1,119 @@
+/* Responsive table container */
+.table-section {
+  overflow-x: auto;
+  background-color: #010101;
+  max-width: 100%;
+  padding: 20px;
+}
+
+/* Increase text sizes for better readability */
+.table th, .table td {
+  font-size: 1.2rem;
+  padding: 15px;
+  height: 100%;
+  vertical-align: middle;
+  text-align: center;
+  border: none;
+}
+
+/* Style the table headers */
+.table thead tr th {
+  background-color: #010101 !important;
+  color: #fff !important;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  border: none;
+}
+
+/* Make the table wider */
+.table {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: none;
+}
+
+/* Remove top and bottom lines */
+.table thead tr {
+  border-top: none;
+  border-bottom: none;
+}
+
+
+/* Remove all borders from table rows */
+.table tbody tr {
+  border-top: none;
+  border: none;
+}
+
+/* Fix: Apply colors to rows using class-based approach */
+.odd-row td {
+  background-color: #010101 !important; /* Black for odd rows */
+  color: #fff !important;
+  
+}
+.even-row td {
+  background-color: #101010 !important; /* Grey for even rows */
+  color: #fff !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.178);
+
+  
+}
+td {
+  background-color: #010101 !important; /* Black for odd rows */
+  color: #fff !important;
+  
+}
+
+
+
+/* Adjust font sizes for smaller screens */
+@media (max-width: 992px) {
+  .table th, .table td {
+    font-size: 1.1rem;
+    padding: 12px;
+  }
+  .table-section {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .table {
+    min-width: 900px;
+  }
+}
+
+@media (max-width: 768px) {
+  .table th, .table td {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .table th, .table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+/* Make the entire U1Core column yellow with a glow effect */
+.table tbody tr td:nth-child(2),
+.table thead tr th:nth-child(2) {
+  font-weight: bold;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Glow effect on hover for U1Core column */
+.table tbody tr td:nth-child(2):hover {
+  box-shadow: 0 0 15px #ffdd57;
+}
+
+/* Style the button */
+.table tbody tr td button {
+  font-size: 1.2rem;
+  padding: 12px 20px;
+  border: none;
+}

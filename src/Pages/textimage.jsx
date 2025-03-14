@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./Textimage.css";
-import Selectedtag from "./Selectedtag";
-
 const Textimage = () => {
   const text =
     "Every business starts with a strong online presence. U1CORE is your first step to launch with impact. From startups to established companies, we deliver high-quality, market-ready designs to fuel growth and set you up for long-term success.";
@@ -73,8 +71,6 @@ const Textimage = () => {
           </Col>
         </Row>
       </Container>
-
-      <Selectedtag/>
     </section>
   );
 };

@@ -12,8 +12,8 @@
 
 /* Background with Gradient */
 .faq-section {
-    background: radial-gradient(circle at top right, rgba(255, 221, 0, 0.589) -90%, transparent 45%),
-        black;
+    background: radial-gradient(circle at top right, rgb(255, 221, 0) -120%, transparent 25%),
+        #010101;
     padding: 50px 0;
 }
 
@@ -37,7 +37,7 @@
 
 /* Accordion Button Styling */
 .faq-section .accordion-button {
-    background: #0d0d0d !important;
+    background: #010101 !important;
     color: #fff;
     font-size: 1.1rem;
     font-weight: 500;

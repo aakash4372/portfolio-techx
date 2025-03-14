@@ -1,10 +1,11 @@
 .footer {
-    background-color: #000000; 
+  background: radial-gradient(circle at top center, rgba(255, 221, 0, 0.69) -110%, transparent 36%),
+  #010101;
     color: #fff; 
     text-align: center;
     padding: 40px 0;
   }
-  .Illustration{
+  .illustration{
     width: 190px;
     height: 190px;
   }
@@ -13,11 +14,19 @@
     font-weight: bold;
     margin-bottom: 20px;
   }
+ .copy-right{
+  font-size: 14px !important;
+  color: gray;
+ }
+ .heading-footer{
+  color: grey;
+ }
  
-  .footer p {
-    font-size: 22px;
-    margin-bottom: 20px;
-  }
+ .footer-text-h6 {
+  font-size: 20px !important;
+  margin-bottom: 20px;
+  color: grey;
+ }
   
   .footer .btn-warning {
     font-size: 18px;
