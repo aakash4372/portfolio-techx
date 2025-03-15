@@ -1,34 +1,8 @@
 import "./cardeffort.css";
-import React, { useEffect, useRef } from "react";
+import React from "react";
+import { motion } from "framer-motion";
 
 const ZigzagCards = () => {
-  const cardsRef = useRef([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible"); // Add class when in view
-          } else {
-            entry.target.classList.remove("visible"); // Remove class when out of view
-          }
-        });
-      },
-      { threshold: 0.2 }
-    );
-
-    cardsRef.current.forEach((card) => {
-      if (card) observer.observe(card);
-    });
-
-    return () => {
-      cardsRef.current.forEach((card) => {
-        if (card) observer.unobserve(card);
-      });
-    };
-  }, []);
-
   const cards = [
     {
       id: 1,
@@ -74,28 +48,29 @@ const ZigzagCards = () => {
 
   return (
     <div className="cardeffort">
-       <h2 className="text-center fw-bold pt-5 pb-5 mb-5">
-       Our services
-        </h2>
+      <h2 className="text-center fw-bold pt-5 pb-5 mb-5">Our Services</h2>
       <div className="container my-5">
         {cards.map((card, index) => (
-          <div
+          <motion.div
             key={card.id}
-            ref={(el) => (cardsRef.current[index] = el)}
             className={`row mb-4 align-items-center ${index % 2 === 0 ? "" : "flex-row-reverse"}`}
+            initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true, amount: 0.2 }}
           >
             <div className="col-md-6 mb-2">
               <img src={card.image} alt={`Card ${card.id}`} className="img-fluid" />
             </div>
             <div className="col-md-6">
-                <img src={card.logo} alt="Logo" className="logo-img mb-4 mt-3" />
+              <img src={card.logo} alt="Logo" className="logo-img mb-4 mt-3" />
               <h2 className="heading-with-logo">
                 <span>{card.heading}</span>
               </h2>
               <p>{card.text}</p>
               <button className="btn btn-primary">{card.buttonText}</button>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

@@ -13,6 +13,8 @@ import Footer from './Pages/Footer'
 import Bestchoices from './Pages/Bestchoices'
 import Textimage from './Pages/textimage'
 import Cardeffort from './Pages/cardeffort'
+import Testimonial from './Pages/Testimonial'
+import ProcessStep from './Pages/ProcessStep'
 
 export default function App() {
   return (
@@ -28,6 +30,8 @@ export default function App() {
       <Questionandanswer/>
       <Cardeffort/>
       <Bestchoices/>
+      <Testimonial/>
+      <ProcessStep/>
       <Footer/>
     </div>
   )
