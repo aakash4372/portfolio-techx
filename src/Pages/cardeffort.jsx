@@ -1,8 +1,15 @@
 import "./cardeffort.css";
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
+import ModalComponent from "./ModalComponent"; // Import Modal
+
 
 const ZigzagCards = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShow = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
+
   const cards = [
     {
       id: 1,
@@ -10,7 +17,7 @@ const ZigzagCards = () => {
       logo: "image/s1.1.png",
       heading: "UI/UX Design",
       text: "We craft intuitive and engaging interfaces that enhance user satisfaction, improve usability, and drive measurable conversions.",
-      buttonText: "Learn More",
+      buttonText: "Contact Us",
     },
     {
       id: 2,
@@ -18,7 +25,7 @@ const ZigzagCards = () => {
       logo: "image/s2.2.png",
       heading: "Product Design",
       text: "We transform innovative ideas into fully functional, market-ready products that perfectly align with your business objectives and goals.",
-      buttonText: "Learn More",
+      buttonText: "Contact Us",
     },
     {
       id: 3,
@@ -34,7 +41,7 @@ const ZigzagCards = () => {
       logo: "image/s4.4.png",
       heading: "3D & Motion",
       text: "We craft immersive 3D visuals and dynamic motion graphics that bring your brand to life, enhancing user engagement and storytelling.",
-      buttonText: "Get Started",
+      buttonText: "Contact Us",
     },
     {
       id: 5,
@@ -42,7 +49,7 @@ const ZigzagCards = () => {
       logo: "image/s5.5.png",
       heading: "Web Development",
       text: "We build scalable, high-performance websites with clean code, seamless functionality, and optimized user experiences across all devices.",
-      buttonText: "Join Us",
+      buttonText: "Contact Us",
     },
   ];
 
@@ -68,11 +75,12 @@ const ZigzagCards = () => {
                 <span>{card.heading}</span>
               </h2>
               <p>{card.text}</p>
-              <button className="btn btn-primary">{card.buttonText}</button>
+              <button className="btn btn-primary" onClick={handleShow}>{card.buttonText}</button>
             </div>
           </motion.div>
         ))}
       </div>
+      <ModalComponent show={showModal} handleClose={handleClose} />
     </div>
   );
 };

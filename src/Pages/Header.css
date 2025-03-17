@@ -18,6 +18,7 @@
 .navbar-section1{
   z-index: 999;
 }
+
 .navbar-toggler {
   border: none;
   outline: none;
@@ -224,7 +225,7 @@
 
   /* Fix dropdown menu */
   .dropdown-menu {
-    background-color: #313131 !important;
+    background-color: #010101 !important;
     border: none !important;
     padding: 10px;
     margin-top: 5px !important;
@@ -330,7 +331,7 @@
   border: none; /* Remove default Bootstrap border */
   width: 270px !important; /* Adjust width */
   min-height: 150px; /* Ensure minimum height */
-  padding: 20px 40px;
+  padding: 20px 20px;
   margin-top: 20px !important; /* Move dropdown down */
   position: absolute; /* Ensure it stays visible */
   z-index: 1000; /* Ensure it stays above other elements */
@@ -362,10 +363,6 @@
   color: #f0a500 !important; /* Yellow text */
 }
 
-.custom-dropdown .dropdown-item:hover .icon-box {
-  background-color: white; /* Change icon background */
-  color: #f0a500; /* Yellow icon */
-}
 
 .icon-box {
   width: 30px;
@@ -373,8 +370,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f0a500;
+  background-color: #fcd300 !important;
   border-radius: 8px;
-  color: white;
+  color: black;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }

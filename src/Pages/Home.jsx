@@ -2,9 +2,14 @@ import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Home.css";
 import { FaStar } from "react-icons/fa";
+import ModalComponent from "./ModalComponent"; // Import Modal
 
 export default function HeroSection() {
     const [isToggled, setIsToggled] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+
+    const handleShow = () => setShowModal(true);
+    const handleClose = () => setShowModal(false);
 
     return (
         <div className="container-fluid home-section pt-5">
@@ -44,7 +49,7 @@ export default function HeroSection() {
 
                 {/* Button */}
                 <div className="button-container pt-2 mb-3">
-                    <button className="book-button">Book a Free Call</button>
+                    <button className="book-button" onClick={handleShow}>Book a Free Call</button>
                 </div>
 
                 {/* Rating Section */}
@@ -64,6 +69,8 @@ export default function HeroSection() {
 
                 </div>
             </div>
+            <ModalComponent show={showModal} handleClose={handleClose} />
+
         </div>
     );
 }

@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Accordion, Container, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Questionandanswer.css'
+import ModalComponent from "./ModalComponent"; // Import Modal
 
 const FAQ = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShow = () => setShowModal(true);
+  const handleClose = () => setShowModal(false);
+
   return (
-   <div className="faq-section">
+   <div className="faq-section" id="faq">
      <Container className="d-flex flex-column align-items-center py-3">
       <h1 className="text-white mb-3">FAQ</h1>
       <Accordion className="w-100 mt-3" style={{ maxWidth: "700px" }}>
@@ -54,9 +60,11 @@ const FAQ = () => {
       </Accordion>
         <p className="text-white mt-4">Ask a question if you haven't found the answer you need:</p> <br/>
       <div className="mt-1 text-center bottom-btn">
-        <Button variant="warning" className="question">Ask a Question</Button>
+        <Button variant="warning" className="question" onClick={handleShow}>Ask a Question</Button>
       </div>
     </Container>
+    <ModalComponent show={showModal} handleClose={handleClose} />
+
    </div>
   );
 };

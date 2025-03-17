@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./ProcessStep.css";
+import ModalComponent from "./ModalComponent"; // Import Modal
 
 const steps = [
   {
@@ -54,6 +55,11 @@ const steps = [
 ];
 
 const ProcessStep = () => {
+    const [showModal, setShowModal] = useState(false);
+  
+    const handleShow = () => setShowModal(true);
+    const handleClose = () => setShowModal(false);
+
   const [currentStep, setCurrentStep] = useState(0);
 
   useEffect(() => {
@@ -70,12 +76,12 @@ const ProcessStep = () => {
         {/* Left Side Content */}
         <Col md={6} className="text-light text-start">
           <span className="process-tag pb-2">How we work?</span>
-          <h2 className="process-title pb-2">Our processes give birth to stars</h2>
+          <h2 className="process-title">Our processes give birth to stars</h2>
           <p className="process-description pt-3 pb-3">
             All steps are agreed upon with the client; the most basic steps in
             implementing the design process are demonstrated here.
           </p>
-          <Button className="process-btn">Book a free call</Button>
+          <Button className="process-btn" onClick={handleShow}>Book a free call</Button>
         </Col>
 
         {/* Right Side - Auto Changing Image & Step Info */}
@@ -99,6 +105,8 @@ const ProcessStep = () => {
           </div>
         </Col>
       </Row>
+      <ModalComponent show={showModal} handleClose={handleClose} />
+
     </Container>
   );
 };
