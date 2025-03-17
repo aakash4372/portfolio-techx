@@ -4,13 +4,13 @@ import Header from "./Pages/Header";
 import Section1 from "./Mainfile/Section1";
 import Footer from "./Pages/Footer";
 import Case from "./Mainfile/Case";
-import ScrollToTop from "./Mainfile/ScrollToTop"; // Import ScrollToTop component
+import ScrollToTop from "./Mainfile/ScrollToTop"; 
 import './App.css'
 
 export default function App() {
   return (
     <Router>
-      <ScrollToTop /> {/* This ensures scrolling to top on every route change */}
+      <ScrollToTop />
       <div>
         <Header />
         <Routes>
@@ -22,3 +22,5 @@ export default function App() {
     </Router>
   );
 }
+
+

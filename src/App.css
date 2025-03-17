@@ -1,5 +1,10 @@
-body, html {
-    overflow-x: hidden; /* Hides horizontal scrolling */
-    width: 100%; /* Ensures full-width layout */
-  }
-  
+body,
+html {
+  overflow-x: hidden;
+  /* Hides horizontal scrolling */
+  width: 100%;
+  /* Ensures full-width layout */
+
+  scroll-behavior: smooth !important;
+
+}
