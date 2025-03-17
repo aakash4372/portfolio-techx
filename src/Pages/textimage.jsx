@@ -47,7 +47,7 @@ const Textimage = () => {
 
   return (
     <section className="hero-section" ref={sectionRef}>
-      <Container className="mt-5 mb-5">
+      <Container className=" mb-5">
         <Row className="align-items-center">
           {/* Left Side - Text */}
           <Col lg={6} md={6} sm={12} className="text-section text-start">

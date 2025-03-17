@@ -1,38 +1,24 @@
-import React from 'react'
-import Header from './Pages/Header'
-import HeroSection from './Pages/Home'
-import VideoSection from './Pages/videosection'
-import MarqueeSlider from './Pages/Marquee'
-
-import Ourcases from './Pages/Ourcases'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./Pages/Header";
+import Section1 from "./Mainfile/Section1";
+import Footer from "./Pages/Footer";
+import Case from "./Mainfile/Case";
+import ScrollToTop from "./Mainfile/ScrollToTop"; // Import ScrollToTop component
 import './App.css'
-import WhyChooseUs from './Pages/whychoose'
-import Imagemarqueeslide from './Pages/imagemarqueeslide'
-import Questionandanswer from './Pages/Questionandanswer'
-import Footer from './Pages/Footer'
-import Bestchoices from './Pages/Bestchoices'
-import Textimage from './Pages/textimage'
-import Cardeffort from './Pages/cardeffort'
-import Testimonial from './Pages/Testimonial'
-import ProcessStep from './Pages/ProcessStep'
 
 export default function App() {
   return (
-    <div>
-      <Header/>
-      <HeroSection/>
-      <VideoSection/>
-      <MarqueeSlider/>
-      <Textimage/>
-      <Ourcases/>
-      <WhyChooseUs/>
-      <Imagemarqueeslide/>
-      <Questionandanswer/>
-      <Cardeffort/>
-      <Bestchoices/>
-      <Testimonial/>
-      <ProcessStep/>
-      <Footer/>
-    </div>
-  )
+    <Router>
+      <ScrollToTop /> {/* This ensures scrolling to top on every route change */}
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Section1 />} />
+          <Route path="/cases" element={<Case />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
+  );
 }

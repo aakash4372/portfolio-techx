@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./imagemarqueeslide.css";
+import ModalComponent from "./ModalComponent"; // Import Modal
 
 const images = [
     "/image/p1.jpg",
@@ -12,7 +13,11 @@ const images = [
     "/image/p6.jpg",
 ];
 
-const Home = () => {
+const Imagemarquee = () => {
+    const [showModal, setShowModal] = useState(false);
+
+    const handleShow = () => setShowModal(true);
+    const handleClose = () => setShowModal(false);
     return (
         <div className="Imagemarqueeslid">
 
@@ -24,7 +29,7 @@ const Home = () => {
                         U1Core is your trusted design partner, helping you achieve success and boost sales with expert-driven, impactful solutions.
                         </p>
                         <div className="bottom-btn">
-                        <Button className="btn-dark mt-4">Become a Client</Button>
+                        <Button className="btn-dark mt-4" onClick={handleShow}>Become a Client</Button>
                         </div>
                     </>
                 </div>
@@ -43,9 +48,12 @@ const Home = () => {
                     </div>
                 </Container>
 
+                <ModalComponent show={showModal} handleClose={handleClose} />
+
+
         </div>
 
     );
 };
 
-export default Home;
+export default Imagemarquee;

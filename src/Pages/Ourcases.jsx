@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom"; // Import Link
 import './Ourcases.css';
 
 const casesData = [
@@ -55,20 +56,24 @@ const CasesSection = () => {
   };
 
   return (
-    <div className="cases-section-bg">
+    <div className="cases-section-bg" id="cases-catalog">
       <Container className="cases-section pt-5">
         <h1 className="section-title text-center mb-5 pt-5">Our Cases</h1>
         <Row className="g-4">
           {casesData.slice(0, visibleItems).map((item) => (
             <Col md={6} key={item.id} className="case-item">
-              <img src={item.image} alt={item.title} className="case-image" />
+              <Link to="/cases"> {/* Wrap image inside Link */}
+                <img src={item.image} alt={item.title} className="case-image" />
+              </Link>
               <h3 className="case-title">{item.title}</h3>
               <p className="case-description">{item.description}</p>
               <div className="case-tags">
                 {item.tags.map((tag, index) => (
-                  <Button key={index} variant="text-white" size="sm" className="case-tag">
-                    {tag}
-                  </Button>
+                  <Link to="/cases" key={index}> {/* Wrap tags inside Link */}
+                    <Button variant="text-white" size="sm" className="case-tag">
+                      {tag}
+                    </Button>
+                  </Link>
                 ))}
               </div>
             </Col>
@@ -77,11 +82,10 @@ const CasesSection = () => {
 
         {visibleItems < casesData.length && (
           <div className="bottom-btn pt-4 pb-5">
-          <Button className="view-more-btn" onClick={handleViewMore}>
-            View More
-          </Button>
-        </div>
-        
+            <Button className="view-more-btn" onClick={handleViewMore}>
+              View More
+            </Button>
+          </div>
         )}
       </Container>
     </div>
