@@ -125,6 +125,7 @@
     width: 150px;
     /* Increased width */
     height: 80px;
+    cursor: pointer;
     /* Increased height */
     background-color: #444;
     border-radius: 80px;
