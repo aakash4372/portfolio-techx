@@ -16,9 +16,9 @@ export default function HeroSection() {
             <div>
                 {/* Logo Image */}
                 <img
-                    src="/image/iconlogo.png"
+                    src="Banners/Logo.png"
                     alt="Top Logo"
-                    className={`mb-3 top-image transition-all ${isToggled ? "grayscale" : ""}`}
+                    className={`mb-1 top-image transition-all ${isToggled ? "grayscale" : ""}`}
                 />
 
                 {/* Heading with Toggle Button */}
@@ -44,8 +44,8 @@ export default function HeroSection() {
                 </div>
 
                
-                <span className="text-secondary mt-3">U1CORE Bureau is a strategic design partner focused on</span><br/>
-                <span className="text-secondary mt-3">delivering real business value through creative and efficient product design.</span>
+                <span className="text-secondary mt-3">BM Techx is your trusted digital partner, dedicated to</span><br/>
+                <span className="text-secondary mt-3">driving business growth with innovative and effective digital strategies.</span>
 
                 {/* Button */}
                 <div className="button-container pt-2 mb-3">
@@ -60,12 +60,12 @@ export default function HeroSection() {
                     </div>
 
 
-                    <div className="company-logos d-flex justify-content-center mt-3 flex-wrap gap-3">
+                    {/* <div className="company-logos d-flex justify-content-center mt-3 flex-wrap gap-3">
                         <span className="company">Upwork</span>
                         <span className="company">Clutch</span>
                         <span className="company">GoodFirms</span>
                         <span className="company">Designrush</span>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>

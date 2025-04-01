@@ -67,14 +67,14 @@ const VideoSection = () => {
     return (
         <div className="Videosection text-light py-5">
             <Container>
-                <Row className="justify-content-center">
+                {/* '''''''<Row className="justify-content-center">
                     <Col md={12} className="text-center">
                         <video controls autoPlay loop muted className="video-large rounded" data-aos="fade-up">
                             <source src="/image/video1.mp4" type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                     </Col>
-                </Row>
+                </Row>''''''' */}
 
                 <Card className="text-light mt-4 p-4 border-0 rounded-5 video-card position-relative" data-aos="fade-up">
                     <Card.Body>
@@ -82,8 +82,8 @@ const VideoSection = () => {
                             <Row className="align-items-center text-center text-md-start">
                                 <Col md={8}>
                                     <h2 className="fw-bold">
-                                        We’re a dedicated team of UI/UX experts
-                                        — not just another
+                                    We are a passionate team of tech experts
+                                    — delivering innovative solutions and driving business growth.
                                     </h2>
                                     <p className="text-secondary-video">
                                         Working with us, you get a design partner who will handle your
@@ -117,7 +117,7 @@ const VideoSection = () => {
                             {/* Stats Section with Animated Count */}
                             <Row ref={statsRef} className="mt-4 card-row d-flex justify-content-center gap-3">
                                 <Col md={3} className="py-3 stats-box flex-grow-1 text-start" data-aos="fade-up">
-                                    <h1 className="text-warning fw-bold">{revenue}$ m</h1>
+                                    <h1 className="text-warning fw-bold">{revenue}L</h1>
                                     <p className="text-secondary-video">Revenue of our projects</p>
                                 </Col>
                                 <Col md={3} className="py-3 stats-box flex-grow-1 text-start" data-aos="fade-up">

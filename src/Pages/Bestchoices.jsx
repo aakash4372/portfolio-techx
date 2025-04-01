@@ -21,15 +21,15 @@ const BestChoice = () => {
             {/* First Row */}
             <li className="best-choice__li">
               <div className="best-choice__li-body">
-                <div className="best-choice__li-body-cell"></div>
+                <div className="best-choice__li-body-cell">Service</div>
                 <div className="best-choice__li-body-cell">Onboarding time</div>
-                <div className="best-choice__li-body-cell">Delivery time for one request</div>
-                <div className="best-choice__li-body-cell">Unlimited design & dev requests with monthly flat-rate</div>
-                <div className="best-choice__li-body-cell">"Flexible resources"</div>
-                <div className="best-choice__li-body-cell">Art Director and Tech Lead supervision</div>
-                <div className="best-choice__li-body-cell">Contract is needed</div>
-                <div className="best-choice__li-body-cell">Cancel or pause subscription any time</div>
-                <div className="best-choice__li-body-cell">Pro team in place and growing together for years</div>
+                <div className="best-choice__li-body-cell">Request Handling</div>
+                <div className="best-choice__li-body-cell">Project Completion Time</div>
+                <div className="best-choice__li-body-cell">Flexible Resources</div>
+                <div className="best-choice__li-body-cell">Expert Supervision</div>
+                <div className="best-choice__li-body-cell">Subscription Flexibility</div>
+                <div className="best-choice__li-body-cell">Team Expertise</div>
+                <div className="best-choice__li-body-cell"></div>
               </div>
             </li>
 
@@ -37,26 +37,28 @@ const BestChoice = () => {
             <li className="best-choice__li best-choice__li--main">
               <div className="best-choice__li-body">
                 <div className="best-choice__li-body-cell">
-                  <img src="https://www.u1core.com/wp-content/themes/u1core/img/logo/logo.svg" alt="Logo" />
+                  <img src="image/bmtechx.png" alt="Logo" />
                 </div>
-                <div className="best-choice__li-body-cell">1 day</div>
-                <div className="best-choice__li-body-cell">Async or 15 min call</div>
-                <div className="best-choice__li-body-cell">2-3 business days</div>
-                <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faCheckCircle} className="icon correct-icon" />
+                <div className="best-choice__li-body-cell">Fast onboarding within 1 day</div>
+                <div className="best-choice__li-body-cell">Quick turnaround via async or brief call</div>
+                <div className="best-choice__li-body-cell">Completed within 2-3 business days</div>
+                <div className="best-choice__li-body-cell d-flex flex-column align-items-center">
+                  <FontAwesomeIcon icon={faCheckCircle} className="icon correct-icon mb-2" />
+                  <div>Available as needed</div>
                 </div>
-                <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faCheckCircle} className="icon correct-icon" />
+                <div className="best-choice__li-body-cell d-flex flex-column align-items-center">
+                  <FontAwesomeIcon icon={faCheckCircle} className="icon correct-icon mb-2" />
+                  <div>Art Director and Tech Lead involved</div>
                 </div>
-                <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faCheckCircle} className="icon correct-icon" />
+                <div className="best-choice__li-body-cell d-flex flex-column align-items-center">
+                  <FontAwesomeIcon icon={faCheckCircle} className="icon correct-icon mb-2" />
+                  <div>Can cancel or pause anytime</div>
                 </div>
-                <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faCheckCircle} className="icon correct-icon" />
+                <div className="best-choice__li-body-cell d-flex flex-column align-items-center">
+                  <FontAwesomeIcon icon={faCheckCircle} className="icon correct-icon mb-2" />
+                  <div>Professional, experienced team with long-term growth</div>
                 </div>
-                <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faCheckCircle} className="icon correct-icon" />
-                </div>
+                <div className="best-choice__li-body-cell"></div>
                 <div className="best-choice__li-body-cell">
                   <button className="btn btn--yellow best-choice__li-body-cell-btn js-contact-btn" onClick={handleShow}>Choose us</button>
                 </div>
@@ -67,23 +69,27 @@ const BestChoice = () => {
             <li className="best-choice__li">
               <div className="best-choice__li-body">
                 <div className="best-choice__li-body-cell">Agency</div>
-                <div className="best-choice__li-body-cell">5-15 days</div>
-                <div className="best-choice__li-body-cell">Meetings, discussions, agreements, contracts etc.</div>
-                <div className="best-choice__li-body-cell">3-15 business days</div>
-                <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon" />
+                <div className="best-choice__li-body-cell">Takes around 5-15 days</div>
+                <div className="best-choice__li-body-cell">Requires multiple meetings and agreements</div>
+                <div className="best-choice__li-body-cell">Typically takes 3-15 business days</div>
+
+                <div className="best-choice__li-body-cell d-flex flex-column align-items-center">
+                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon mb-2" />
+                  <div>Limited availability</div>
+                </div>
+                <div className="best-choice__li-body-cell d-flex flex-column align-items-center">
+                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon mb-2" />
+                  <div>Not always provided</div>
+                </div>
+                <div className="best-choice__li-body-cell d-flex flex-column align-items-center">
+                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon mb-2" />
+                  <div>Fixed-term agreement</div>
                 </div>
                 <div className="best-choice__li-body-cell">
                   <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon" />
                 </div>
+                
                 <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon" />
-                </div>
-                <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon" />
-                </div>
-                <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon" />
                 </div>
                 <div className="best-choice__li-body-cell"></div>
               </div>
@@ -93,23 +99,26 @@ const BestChoice = () => {
             <li className="best-choice__li">
               <div className="best-choice__li-body">
                 <div className="best-choice__li-body-cell">Freelancers</div>
-                <div className="best-choice__li-body-cell">2-4 days</div>
-                <div className="best-choice__li-body-cell">Endless texts, calls, time wasted on explaining</div>
-                <div className="best-choice__li-body-cell">3-7 business days</div>
-                <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon" />
+                <div className="best-choice__li-body-cell">Takes about 2-4 days</div>
+                <div className="best-choice__li-body-cell">Involves back-and-forth communication</div>
+                <div className="best-choice__li-body-cell">Takes around 3-7 business days</div>
+                <div className="best-choice__li-body-cell d-flex flex-column align-items-center">
+                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon mb-2" />
+                  <div> No flexibility</div>
+                </div>
+                <div className="best-choice__li-body-cell d-flex flex-column align-items-center">
+                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon mb-2" />
+                  <div> Not guaranteed</div>
+                </div>
+                <div className="best-choice__li-body-cell d-flex flex-column align-items-center">
+                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon mb-2" />
+                  <div>No flexibility</div>
                 </div>
                 <div className="best-choice__li-body-cell">
                   <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon" />
                 </div>
+                
                 <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon" />
-                </div>
-                <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon" />
-                </div>
-                <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon" />
                 </div>
                 <div className="best-choice__li-body-cell"></div>
               </div>
@@ -118,24 +127,27 @@ const BestChoice = () => {
             {/* Fifth Row */}
             <li className="best-choice__li">
               <div className="best-choice__li-body">
-                <div className="best-choice__li-body-cell">Hiring</div>
-                <div className="best-choice__li-body-cell">1-2 weeks</div>
-                <div className="best-choice__li-body-cell">Endless texts, calls, time wasted on explaining</div>
-                <div className="best-choice__li-body-cell">3-7 business days</div>
-                <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon" />
+                <div className="best-choice__li-body-cell">Direct Hiring</div>
+                <div className="best-choice__li-body-cell">May take 1-2 weeks</div>
+                <div className="best-choice__li-body-cell">Time-consuming with extensive explanations</div>
+                <div className="best-choice__li-body-cell">Completion within 3-7 business days</div>
+                <div className="best-choice__li-body-cell d-flex flex-column align-items-center">
+                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon mb-2" />
+                  <div> Limited options</div>
+                </div>
+                <div className="best-choice__li-body-cell d-flex flex-column align-items-center">
+                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon mb-2" />
+                  <div> Not included</div>
+                </div>
+                <div className="best-choice__li-body-cell d-flex flex-column align-items-center">
+                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon mb-2" />
+                  <div>No flexibility</div>
                 </div>
                 <div className="best-choice__li-body-cell">
                   <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon" />
                 </div>
+                
                 <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon" />
-                </div>
-                <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon" />
-                </div>
-                <div className="best-choice__li-body-cell">
-                  <FontAwesomeIcon icon={faTimesCircle} className="icon wrong-icon" />
                 </div>
                 <div className="best-choice__li-body-cell"></div>
               </div>

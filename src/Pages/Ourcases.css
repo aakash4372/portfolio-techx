@@ -66,6 +66,10 @@
     padding: 10px 15px;
     border: 1px solid #e2e2e2;
   }
+
+  .cases-section-bg a{
+    color: transparent;
+  }
   
   .case-tag:hover {
     background-color: #171714;

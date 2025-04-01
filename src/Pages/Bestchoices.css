@@ -61,7 +61,7 @@
 .best-choice__li-body-cell {
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 120%;
   color: var(--main-white);
   display: flex;
@@ -126,8 +126,8 @@
 
 /* Icon Styles */
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
 }
 
 .correct-icon {

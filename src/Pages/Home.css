@@ -34,7 +34,7 @@
     right: 150px;
     width: 38%;
     height: 100%;
-    background-image: url('/image/download.png') !important;
+    background-image: url('/Banners/download.png') !important;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center right;
@@ -54,7 +54,7 @@
 
 /* Image Styling */
 .top-image {
-    width: 250px;
+    width: 240px;
     /* Increased size */
     height: 250px;
     margin-bottom: 20px;

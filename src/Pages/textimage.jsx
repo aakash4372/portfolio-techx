@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import "./Textimage.css";
 const Textimage = () => {
   const text =
-    "Every business starts with a strong online presence. U1CORE is your first step to launch with impact. From startups to established companies, we deliver high-quality, market-ready designs to fuel growth and set you up for long-term success.";
+    "Establishing a strong online presence is essential for business growth. At BM TechX, we help you make a powerful impact from the start. Whether you’re a startup or an established enterprise, we provide cutting-edge, market-ready tech solutions designed to fuel your growth and ensure long-term success.";
 
   const words = text.split(" "); // Splitting text into words
   const [visibleWords, setVisibleWords] = useState(Array(words.length).fill("grey"));
@@ -51,10 +51,10 @@ const Textimage = () => {
         <Row className="align-items-center">
           {/* Left Side - Text */}
           <Col lg={6} md={6} sm={12} className="text-section text-start">
-            <Button className="brand-btn">U1CORE</Button>
+            <Button className="brand-btn">BM TechX</Button>
             <h1>
-              Your ultimate <br />
-              <span className="highlight">go-to-market solution</span>
+            Your Reliable <br />
+              <span className="highlight">Partner for Market Success</span>
             </h1>
             <p>
               {words.map((word, index) => (

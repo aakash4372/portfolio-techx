@@ -50,7 +50,7 @@ const steps = [
     id: 8,
     title: "Step 8 - Deployment",
     description: "Launching the project to production with optimizations.",
-    image: "image/birth1.svg",
+    image: "Banners/finalpic.png",
   },
 ];
 

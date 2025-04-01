@@ -6,33 +6,33 @@ import "./whychoose.css";
 const services = [
   {
     image: "/image/icon1.png",
-    title: "Custom Product Design",
+    title: "Tailored Technology Solutions",
     description:
-      "We create personalized designs tailored to your brand identity and target audience, ensuring your product stands out in the market.",
+      "We develop customized solutions designed to meet your business needs, ensuring efficiency, reliability, and a strong market presence.",
   },
   {
     image: "/image/icon2.png",
-    title: "Expertise in Digital Products",
+    title: "Expertise in Advanced Technologies",
     description:
-      "With extensive experience in SaaS, Web3, fintech, and AI, we design solutions that are both innovative and highly functional.",
+      "With experience in AI, Web Development, IoT, and Cloud Computing, we create innovative digital solutions that enhance business operations.",
   },
   {
     image: "/image/icon3.png",
-    title: "In-Depth Product Understanding",
+    title: "Strategic Project Execution",
     description:
-      "We ensure deep knowledge and insight into every aspect of your product, helping you make informed decisions.",
+      "Our structured project management approach guarantees timely delivery, cost-effectiveness, and high-quality outcomes tailored to your goals.",
   },
   {
     image: "/image/icon4.png",
-    title: "Efficient Project Management",
+    title: "Seamless Collaboration",
     description:
-      "We adhere strictly to timelines and budgets, ensuring seamless delivery without compromising on quality.",
+      "We emphasize clear communication and teamwork, ensuring our solutions align perfectly with your business vision and objectives.",
   },
   {
     image: "/image/icon5.png",
-    title: "Collaborative Communication",
+    title: "Result-Driven Approach",
     description:
-      "We ensure smooth collaboration to align with your business goals and deliver successful products.",
+      "Our commitment to excellence ensures that our technology solutions are high-performing, scalable, and optimized for long-term success",
   },
   {
     image: "/image/icon6.png",
@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
     <div className="why-choose-container">
       <Container className="py-2">
         <h2 className="text-center fw-bold mb-5">
-          Why Choose U1CORE for Your Product Design?
+          Why Choose BM TechX for Your Product Design?
         </h2>
         <Row className="g-4">
           {services.map((service, index) => (

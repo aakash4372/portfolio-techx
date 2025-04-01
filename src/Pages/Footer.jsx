@@ -27,7 +27,7 @@ const Footer = () => {
     <footer className="footer text-light py-5">
       <Container className="footer-container">
         <div className="text-center mb-4">
-          <img src="https://www.u1core.com/wp-content/themes/u1core/img/footer/illustration.png" alt="Illustration" className="illustration mb-3" />
+          <img src="Banners/Logo.png" alt="Illustration" className="illustration mb-3" />
           <h2>Have a big idea?</h2>
           <h6 className="footer-text-h6 text-center">Let's bring it to life together!</h6>
           <Button variant="warning" onClick={handleShow}>Get started</Button>
@@ -43,9 +43,9 @@ const Footer = () => {
             {/* Logo and Social Media */}
             <Col xs={12} md={4} className="text-center text-md-start mb-4 mb-md-0">
               <Link to="/">
-                <img src="https://www.u1core.com/wp-content/themes/u1core/img/logo/logo.svg" alt="Logo" className="mb-2" />
+                <img src="Banners/Bmtech.png" alt="Logo" className="mb-2" width={200} />
               </Link>
-              <p>Your reliable design partner</p>
+              <p className="text-center text-md-start">Your reliable design partner</p>
             </Col>
 
             {/* General Section */}
@@ -74,7 +74,7 @@ const Footer = () => {
 
         {/* Copyright Section */}
         <div className="text-center mt-5 mb-0">
-          <h5 className="mb-0 pb-0 copy-right">&copy; {new Date().getFullYear()} BMTechin. All rights reserved.</h5>
+          <h5 className="mb-0 pb-0 copy-right">&copy; {new Date().getFullYear()} BMTechX.in. All rights reserved.</h5>
         </div>
       </Container>
       <ModalComponent show={showModal} handleClose={handleClose} />

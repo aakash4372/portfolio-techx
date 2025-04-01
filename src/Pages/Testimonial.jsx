@@ -4,24 +4,28 @@ import { FaArrowLeft, FaArrowRight, FaQuoteLeft, FaQuoteRight } from "react-icon
 
 const testimonials = [
   {
-    text: "Working with the U1Core team on the UX design for DreamCoachMatch.com has been an incredible experience! From day one, they impressed us with their creativity, responsiveness, exceptional communication.",
-    name: "Yuri Minski",
-    role: "CEO & Founder at Dream Coach Match",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyzTWQoCUbRNdiyorem5Qp1zYYhpliR9q0Bw&s",
+    text: "I recently got my e-commerce website, Fresh Bounty, designed, and BM TechX did an outstanding job! They added 15 high-quality images, perfectly optimized for a seamless user experience. The design is sleek, professional, and visually appealing.Their attention to detail and expertise in website creation truly made a difference. Fresh Bounty loads fast, looks stunning, and is easy to navigate.I highly recommend BM TechX for anyone looking for a top-notch e-commerce website.",
+    name: "Kalid Fayaz",
     rating: "5.0",
   },
   {
-    text: "U1CORE Bureau has been exceptional with helping us with branding, design, UX, and UI for a new debit card design tool that we are about to launch.",
-    name: "Jelle van Schaick",
-    role: "Head of Marketing at Integrio",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyzTWQoCUbRNdiyorem5Qp1zYYhpliR9q0Bw&s",
-    rating: "4.9",
+    text: "I am running a cleaning service in Coimbatore. I decided to design a website for this and contacted them. BM Techx designed a website with the best technology in a way that I liked.",
+    name: "Chinna Cleaning Facility",
+    rating: "5.0",
   },
   {
-    text: "Working with U1CORE was an exceptional experience! I engaged their team for UI/UX design services for my mobile app, and they truly delivered.",
-    name: "Illarion Medvedev",
-    role: "CEO at iMedesign",
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyzTWQoCUbRNdiyorem5Qp1zYYhpliR9q0Bw&s",
+    text: "I received a Best service from BM TECHX. Trusted company Quality work thank you so much.",
+    name: "LEARNENG EDUCATION (TAITTAN)",
+    rating: "5.0",
+  },
+  {
+    text: "I’m Kavitha, the Managing Director of JK Coaching Academy. From the very beginning until the handover, my experience with BM TechX has been smooth and seamless. The designs were fantastic, and the vibrant, positive colors truly stood out. Whenever I needed any corrections or changes, I was always met with warmth and a smiling team. I truly appreciate all the support provided.Wishing everyone continued success in the future!",
+    name: "JK Academy (Kavitha J)",
+    rating: "5.0",
+  },
+  {
+    text: "Dedicated working. Happy with their output.",
+    name: "Raininfo tech",
     rating: "5.0",
   },
 ];
@@ -56,10 +60,8 @@ const Testimonial = () => {
 
           {/* User Info */}
           <div className="testimonial-user">
-            <img src={testimonials[index].image} alt={testimonials[index].name} className="testimonial-user-img" />
             <div className="testimonial-user-info">
               <h5>{testimonials[index].name}</h5>
-              <small>{testimonials[index].role}</small>
             </div>
           </div>
 

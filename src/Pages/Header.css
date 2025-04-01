@@ -309,13 +309,20 @@
   }
 
   .logo {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .contact-btn {
     padding: 6px 10px;
     font-size: 12.5px;
     min-width: 80px;
+  }
+
+
+
+  .navbar-toggler-icon {
+    width: 25px; /* Reduce icon size */
+    height: 25px;
   }
 
   .offcanvas {

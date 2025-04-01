@@ -16,45 +16,35 @@ const FAQ = () => {
       <h1 className="text-white mb-3">FAQ</h1>
       <Accordion className="w-100 mt-3" style={{ maxWidth: "700px" }}>
         <Accordion.Item eventKey="0">
-          <Accordion.Header>How do we start working together?</Accordion.Header>
+          <Accordion.Header>Creative Development</Accordion.Header>
           <Accordion.Body>
-            <p><strong>It's simple!</strong></p>
-            <p><strong>Contact Us</strong> – Fill out the contact form or email us.</p>
-            <p><strong>Discovery Call</strong> – We discuss your project goals, requirements, and vision.</p>
-            <p><strong>Proposal & Pricing</strong> – We provide a clear cost estimate and timeline.</p>
-            <p><strong>Kickoff & Execution</strong> – Once approved, we begin the design and development process.</p>
+           This involves the process of creating new and innovative ideas for projects, including concept creation, visual storytelling, and content strategy. It combines artistic creativity with technical skills to produce engaging content, products, or campaigns.
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="1">
-          <Accordion.Header>How do you estimate project costs?</Accordion.Header>
-          <Accordion.Body>We analyze project scope, complexity, and timeline to determine costs.</Accordion.Body>
+          <Accordion.Header>UI (User Interface) Design</Accordion.Header>
+          <Accordion.Body>UI (User Interface) Design focuses on the visual elements of a product or website, such as buttons, colors, fonts, and layout, ensuring it is aesthetically pleasing and functional.</Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="2">
-          <Accordion.Header>How is U1CORE different from other design agencies?</Accordion.Header>
-          <Accordion.Body>We offer a unique approach, focusing on user-centric designs and innovation.</Accordion.Body>
+          <Accordion.Header>UX (User Experience) Design</Accordion.Header>
+          <Accordion.Body>UX (User Experience) Design focuses on optimizing the user's experience by making the interface intuitive, easy to navigate, and enjoyable. It ensures that the product meets the needs and expectations of users.</Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="3">
-          <Accordion.Header>What is the difference between UI and UX design?</Accordion.Header>
+          <Accordion.Header>Creative Design</Accordion.Header>
           <Accordion.Body>
-            UI (User Interface) focuses on the look and feel, while UX (User Experience) focuses on usability and functionality.
+          This is the artistic aspect of designing visual elements for various media, such as graphics, websites, logos, and advertisements. It focuses on bringing creative ideas to life through design principles like color theory, typography, and layout to make content visually engaging.
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="4">
-          <Accordion.Header>How long does it take to complete a project?</Accordion.Header>
+          <Accordion.Header>Data Science</Accordion.Header>
           <Accordion.Body>
-            Project timelines vary based on complexity, but we ensure timely delivery with a structured process.
+          Data science is the field that uses scientific methods, algorithms, and systems to analyze large sets of data. It helps organizations extract insights, predict trends, and make data-driven decisions. It integrates computer science, statistics, and machine learning to solve complex problems.
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="5">
-          <Accordion.Header>Can you redesign my existing website or app?</Accordion.Header>
+          <Accordion.Header>App Design</Accordion.Header>
           <Accordion.Body>
-            Yes, we specialize in revamping websites and apps to improve design and functionality.
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="6">
-          <Accordion.Header>What industries do you specialize in?</Accordion.Header>
-          <Accordion.Body>
-            We cater to various industries including tech, healthcare, e-commerce, and more.
+          This involves the process of designing mobile applications, focusing on both the UI/UX aspects and technical functionality. It includes creating wireframes, defining the user journey, and ensuring the app is visually appealing, intuitive, and user-friendly.
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>

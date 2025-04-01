@@ -27,7 +27,7 @@ const Header = () => {
         <div className="container-fluid">
           {/* Logo (Navbar.Brand) navigates to home "/" */}
           <Navbar.Brand as={Link} to="/" className="logo" onClick={() => setShow(false)}>
-            <span className="logo-suffix">U1CORE</span>
+            <span className="logo-suffix">BM TechX</span>
           </Navbar.Brand>
 
           {/* Offcanvas menu toggle */}
