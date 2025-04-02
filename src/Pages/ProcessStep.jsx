@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./ProcessStep.css";
-import ModalComponent from "./ModalComponent"; // Import Modal
+import { bookFreeCall } from "../Whatsapp/whatsappUtils";
 
 const steps = [
   {
     id: 1,
     title: "Step 1 - Research & Planning",
     description: "Gathering requirements and understanding the project scope.",
-    image: "image/birth1.svg",
+    image: "Banners/work1.png",
   },
   {
     id: 2,
@@ -20,19 +20,19 @@ const steps = [
     id: 3,
     title: "Step 3 - Prototyping",
     description: "Building an interactive prototype to validate ideas.",
-    image: "image/birth3.svg",
+    image: "Banners/work3.png",
   },
   {
     id: 4,
     title: "Step 4 - UI/UX Design",
     description: "Designing high-fidelity mockups and UI components.",
-    image: "image/birth4.svg",
+    image: "Banners/work4.png",
   },
   {
     id: 5,
     title: "Step 5 - Design of key screens",
     description: "Creating primary screens that define the project’s look and feel.",
-    image: "image/birth5.svg",
+    image: "Banners/work5.png",
   },
   {
     id: 6,
@@ -44,21 +44,18 @@ const steps = [
     id: 7,
     title: "Step 7 - Testing",
     description: "Performing QA testing to ensure quality and performance.",
-    image: "image/birth7.svg",
+    image: "Banners/finalpic.png",
   },
   {
     id: 8,
     title: "Step 8 - Deployment",
     description: "Launching the project to production with optimizations.",
-    image: "Banners/finalpic.png",
+    image: "Banners/work8.png",
   },
 ];
 
 const ProcessStep = () => {
-    const [showModal, setShowModal] = useState(false);
-  
-    const handleShow = () => setShowModal(true);
-    const handleClose = () => setShowModal(false);
+
 
   const [currentStep, setCurrentStep] = useState(0);
 
@@ -81,7 +78,7 @@ const ProcessStep = () => {
             All steps are agreed upon with the client; the most basic steps in
             implementing the design process are demonstrated here.
           </p>
-          <Button className="process-btn" onClick={handleShow}>Book a free call</Button>
+          <Button className="process-btn"  onClick={bookFreeCall}>Book a free call</Button>
         </Col>
 
         {/* Right Side - Auto Changing Image & Step Info */}
@@ -105,7 +102,7 @@ const ProcessStep = () => {
           </div>
         </Col>
       </Row>
-      <ModalComponent show={showModal} handleClose={handleClose} />
+
 
     </Container>
   );

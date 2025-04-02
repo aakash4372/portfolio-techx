@@ -2,13 +2,10 @@ import React, { useState } from "react";
 import { Accordion, Container, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Questionandanswer.css'
-import ModalComponent from "./ModalComponent"; // Import Modal
+import { bookFreeCall } from "../Whatsapp/whatsappUtils";
 
 const FAQ = () => {
-  const [showModal, setShowModal] = useState(false);
 
-  const handleShow = () => setShowModal(true);
-  const handleClose = () => setShowModal(false);
 
   return (
    <div className="faq-section" id="faq">
@@ -50,10 +47,9 @@ const FAQ = () => {
       </Accordion>
         <p className="text-white mt-4">Ask a question if you haven't found the answer you need:</p> <br/>
       <div className="mt-1 text-center bottom-btn">
-        <Button variant="warning" className="question" onClick={handleShow}>Ask a Question</Button>
+        <Button variant="warning" className="question"  onClick={bookFreeCall}>Ask a Question</Button>
       </div>
     </Container>
-    <ModalComponent show={showModal} handleClose={handleClose} />
 
    </div>
   );

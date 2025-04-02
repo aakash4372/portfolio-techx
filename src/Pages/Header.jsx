@@ -1,43 +1,36 @@
 import React, { useState } from "react";
 import { Navbar, Nav, Button, Offcanvas, NavDropdown } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
+import { Link, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
 import { GiFeather } from "react-icons/gi";
 import { FaLaptopCode, FaPaintBrush, FaCube } from "react-icons/fa";
-import ModalComponent from "./ModalComponent";
+import { bookFreeCall } from "../Whatsapp/whatsappUtils";
 
 const Header = () => {
   const [show, setShow] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const [showModal, setShowModal] = useState(false);
-  const navigate = useNavigate(); // Hook for navigation
-
-  const handleShow = () => setShowModal(true);
-  const handleClose = () => setShowModal(false);
+  const navigate = useNavigate();
 
   const handleNavigate = () => {
     navigate("/cases");
-    setShow(false); // Close the offcanvas
+    setShow(false);
   };
 
   return (
     <div className="navbar-section1">
       <Navbar expand="lg" className="custom-navbar">
         <div className="container-fluid">
-          {/* Logo (Navbar.Brand) navigates to home "/" */}
           <Navbar.Brand as={Link} to="/" className="logo" onClick={() => setShow(false)}>
-            <span className="logo-suffix">BM TechX</span>
+            <span className="logo-suffix">BM Techx</span>
           </Navbar.Brand>
 
-          {/* Offcanvas menu toggle */}
           <Navbar.Toggle
             aria-controls="offcanvasNavbar"
             className="offcanvas-toggle"
             onClick={() => setShow(true)}
           />
 
-          {/* Full-screen Offcanvas menu */}
           <Navbar.Offcanvas
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
@@ -52,7 +45,6 @@ const Header = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="nav-links">
-                {/* Dropdown for Services */}
                 <NavDropdown
                   title="Services"
                   id="services-dropdown"
@@ -81,7 +73,6 @@ const Header = () => {
                   </NavDropdown.Item>
                 </NavDropdown>
 
-                {/* NavLink to navigate to Cases */}
                 <Nav.Link as={Link} to="/cases" className="custom-nav-link" onClick={() => setShow(false)}>
                   Cases
                 </Nav.Link>
@@ -89,8 +80,7 @@ const Header = () => {
             </Offcanvas.Body>
           </Navbar.Offcanvas>
 
-          {/* Contact button aligned to the right */}
-          <Button className="contact-btn ms-auto" onClick={handleShow}>
+          <Button className="contact-btn ms-auto"  onClick={bookFreeCall}>
             Contact Us
             <span className="icon-circle">
               <GiFeather className="feather-icon" />
@@ -98,8 +88,6 @@ const Header = () => {
           </Button>
         </div>
       </Navbar>
-
-      <ModalComponent show={showModal} handleClose={handleClose} />
     </div>
   );
 };

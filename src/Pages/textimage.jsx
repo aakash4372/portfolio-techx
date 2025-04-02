@@ -46,12 +46,12 @@ const Textimage = () => {
   }, [isVisible]); // Runs only when section becomes visible
 
   return (
-    <section className="hero-section" ref={sectionRef}>
+    <section className="hero-section" ref={sectionRef} id="about-us">
       <Container className=" mb-5">
         <Row className="align-items-center">
           {/* Left Side - Text */}
           <Col lg={6} md={6} sm={12} className="text-section text-start">
-            <Button className="brand-btn">BM TechX</Button>
+            <Button className="brand-btn">BM Techx</Button>
             <h1>
             Your Reliable <br />
               <span className="highlight">Partner for Market Success</span>
@@ -67,7 +67,7 @@ const Textimage = () => {
 
           {/* Right Side - Image */}
           <Col lg={6} md={6} sm={12} className="image-section">
-            <img src="/image/heroimage.png" alt="Dotted Logo" className="hero-image" />
+            <img src="/Banners/dotimage.png" alt="Dotted Logo" className="hero-image" />
           </Col>
         </Row>
       </Container>

@@ -1,15 +1,9 @@
 import "./cardeffort.css";
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import ModalComponent from "./ModalComponent"; // Import Modal
-
+import { bookFreeCall } from "../Whatsapp/whatsappUtils"; // Import WhatsApp utility
 
 const ZigzagCards = () => {
-  const [showModal, setShowModal] = useState(false);
-
-  const handleShow = () => setShowModal(true);
-  const handleClose = () => setShowModal(false);
-
   const cards = [
     {
       id: 1,
@@ -40,12 +34,12 @@ const ZigzagCards = () => {
       image: "Banners/Web Develpment.png",
       logo: "image/s4.4.png",
       heading: "3D & Motion",
-      text: "Bring your ideas to life with dynamic 3D motion graphics that captivate and engage. Our animations add depth, realism, and energy to your brand’s storytelling.",
+      text: "Bring your ideas to life with dynamic 3D motion graphics that captivate and engage. Our animations add depth, realism, and energy to your brand's storytelling.",
       buttonText: "Contact Us",
     },
     {
       id: 5,
-      image: "Banners/Product design.png",
+      image: "Banners/Coding.png",
       logo: "image/s5.5.png",
       heading: "Web Development",
       text: "We build high-performance, responsive websites tailored to your business needs. From front-end to back-end, our development solutions ensure speed, security, and scalability.",
@@ -75,12 +69,16 @@ const ZigzagCards = () => {
                 <span>{card.heading}</span>
               </h2>
               <p>{card.text}</p>
-              <button className="btn btn-primary" onClick={handleShow}>{card.buttonText}</button>
+              <button 
+                className="btn btn-primary" 
+                onClick={bookFreeCall} // Using the imported WhatsApp function
+              >
+                {card.buttonText}
+              </button>
             </div>
           </motion.div>
         ))}
       </div>
-      <ModalComponent show={showModal} handleClose={handleClose} />
     </div>
   );
 };

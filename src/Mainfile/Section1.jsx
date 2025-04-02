@@ -11,6 +11,7 @@ import Testimonial from '../Pages/Testimonial'
 import ProcessStep from '../Pages/ProcessStep'
 import Imagemarquee from '../Pages/imagemarqueeslide'
 import FAQ from '../Pages/Questionandanswer'
+import FloatingVideo from '../Pages/floatingvideo'
 
 export default function Section1() {
   return (
@@ -26,6 +27,7 @@ export default function Section1() {
       <Testimonial/>
       <Imagemarquee/>
       <ProcessStep/>
+      <FloatingVideo/>
       <FAQ/>     
     </div>
   )

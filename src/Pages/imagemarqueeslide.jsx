@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Container, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./imagemarqueeslide.css";
-import ModalComponent from "./ModalComponent"; // Import Modal
+import { bookFreeCall } from "../Whatsapp/whatsappUtils";
 
 const images = [
     "Banners/p1.png",
@@ -22,10 +22,8 @@ const images = [
 ];
 
 const Imagemarquee = () => {
-    const [showModal, setShowModal] = useState(false);
 
-    const handleShow = () => setShowModal(true);
-    const handleClose = () => setShowModal(false);
+
     return (
         <div className="Imagemarqueeslid">
 
@@ -37,7 +35,7 @@ const Imagemarquee = () => {
                         BM TechX is your reliable technology partner, delivering cutting-edge solutions that drive growth, enhance efficiency, and maximize business potential.
                         </p>
                         <div className="bottom-btn">
-                        <Button className="btn-dark mt-4" onClick={handleShow}>Become a Client</Button>
+                        <Button className="btn-dark mt-4" onClick={bookFreeCall}>Become a Client</Button>
                         </div>
                     </>
                 </div>
@@ -56,7 +54,7 @@ const Imagemarquee = () => {
                     </div>
                 </Container>
 
-                <ModalComponent show={showModal} handleClose={handleClose} />
+                
 
 
         </div>
