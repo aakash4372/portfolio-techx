@@ -16,7 +16,7 @@ const casesData = [
     image: "Banners/p13.png",
     title: "Red Collar",
     description: "Fashioning your style with premium clothing and accessories.",
-    tags: ["Education","App"],
+    tags: ["App"],
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const casesData = [
     image: "Banners/p4.png",
     title: "TravellersNeed",
     description: "Your ultimate travel companion for unforgettable adventures.",
-    tags: ["Travel"],
+    tags: ["Tours and Travels"],
   },
   {
     id: 7,
