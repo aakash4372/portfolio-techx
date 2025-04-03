@@ -93,7 +93,7 @@ const casesData = [
     image: "Banners/p11.png",
     title: "NSA Holidays Kodaikannal",
     description: "Your gateway to serene and unforgettable holiday experiences.",
-    tags: ["Web design","Tour"],
+    tags: ["Web design","Tours and Travels"],
   },
   {
     id: 14,
