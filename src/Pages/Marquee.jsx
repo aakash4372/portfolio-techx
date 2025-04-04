@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import "./Marquee.css"; // Import CSS file for styling
+import "./css/Marquee.css"; // Import CSS file for styling
 
 
 const MarqueeSlider = () => {

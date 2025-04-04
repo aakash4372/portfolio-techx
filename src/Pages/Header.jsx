@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Navbar, Nav, Button, Offcanvas, NavDropdown } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Header.css";
+import "./css/Header.css";
 import { GiFeather } from "react-icons/gi";
 import { FaLaptopCode, FaPaintBrush, FaCube } from "react-icons/fa";
 import { bookFreeCall } from "../Whatsapp/whatsappUtils";

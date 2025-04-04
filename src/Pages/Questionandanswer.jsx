@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Accordion, Container, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import './Questionandanswer.css'
+import './css/Questionandanswer.css';
 import { bookFreeCall } from "../Whatsapp/whatsappUtils";
 
 const FAQ = () => {

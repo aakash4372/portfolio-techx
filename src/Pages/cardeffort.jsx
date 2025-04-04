@@ -1,4 +1,4 @@
-import "./cardeffort.css";
+import "./css/cardeffort.css";
 import React from "react";
 import { motion } from "framer-motion";
 import { bookFreeCall } from "../Whatsapp/whatsappUtils"; // Import WhatsApp utility

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Testimonial.css"; // Import the CSS file
+import "./css/Testimonial.css"; // Import the CSS file
 import { FaArrowLeft, FaArrowRight, FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 const testimonials = [

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import "./Home.css";
+import "./css/Home.css";
 import { FaStar } from "react-icons/fa";
 import { bookFreeCall } from "../Whatsapp/whatsappUtils";
 

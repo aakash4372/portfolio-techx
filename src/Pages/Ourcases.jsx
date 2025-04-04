@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button, Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom"; // Import Link
-import './Ourcases.css';
+import './css/Ourcases.css';
 
 const casesData = [
   {

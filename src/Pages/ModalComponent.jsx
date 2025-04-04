@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button, Form, Row, Col } from "react-bootstrap";
 import { X } from "react-bootstrap-icons"; // Import close icon
-import './ModalComponent.css';
+import './css/ModalComponent.css';
 import Avatar from "@mui/material/Avatar";
 
 const ContactModal = ({ show, handleClose }) => {

@@ -3,7 +3,7 @@ import { Container, Row, Col, Accordion, Button, Card } from "react-bootstrap";
 import { FaPlus, FaTimes } from "react-icons/fa";
 import { TbDragDrop } from "react-icons/tb";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./Selectedtag.css";
+import "./css/Selectedtag.css";
 import { TbArrowLeft } from "react-icons/tb";
 
 const servicesData = {

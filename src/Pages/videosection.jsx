@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Avatar, AvatarGroup } from "@mui/material";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./VideoSection.css";
+import "./css/VideoSection.css";
 
 const VideoSection = () => {
     // State variables for animated numbers

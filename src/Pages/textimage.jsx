@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import "./Textimage.css";
+import "./css/Textimage.css";
 const Textimage = () => {
   const text =
     "Establishing a strong online presence is essential for business growth. At BM TechX, we help you make a powerful impact from the start. Whether you’re a startup or an established enterprise, we provide cutting-edge, market-ready tech solutions designed to fuel your growth and ensure long-term success.";

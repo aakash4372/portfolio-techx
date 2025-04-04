@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./imagemarqueeslide.css";
+import "./css/imagemarqueeslide.css";
 import { bookFreeCall } from "../Whatsapp/whatsappUtils";
 
 const images = [
