@@ -20,8 +20,8 @@ export default function HeroSection() {
                 {/* Heading with Toggle Button */}
                 <div className="heading-container">
                     <h1 className="display-4">
-                        Turning C
-                        <span className="toggle-container">
+                        Turning 
+                        C<span className="toggle-container">
                             <label className="toggle-label">
                                 <input
                                     type="checkbox"

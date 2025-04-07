@@ -61,7 +61,7 @@ const Aboutinfosection = () => {
       animateValue(setExperience, 0, 13, 5000);
       animateValue(setRevenue, 0, 15, 5000);
       animateValue(setProjects, 0, 250, 5000);
-      animateValue(setUsers, 0, 500, 5000);
+      animateValue(setUsers, 0, 450, 5000);
     }
   }, [startCount]);
 
@@ -151,8 +151,8 @@ const Aboutinfosection = () => {
                   className="py-3 stats-box flex-grow-1 text-start"
                   data-aos="fade-up"
                 >
-                  <h1 className="text-warning fw-bold">{users} k</h1>
-                  <p className="text-secondary-video">Users of our projects</p>
+                  <h1 className="text-warning fw-bold">{users}+</h1>
+                  <p className="text-secondary-video">Happy Clients</p>
                 </Col>
               </Row>
             </Container>

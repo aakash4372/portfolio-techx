@@ -60,7 +60,7 @@ const VideoSection = () => {
 
             animateValue(setRevenue, 0, 15, 5000);
             animateValue(setProjects, 0, 250, 5000);
-            animateValue(setUsers, 0, 500, 5000);
+            animateValue(setUsers, 0, 450, 5000);
         }
     }, [startCount]);
 
@@ -125,8 +125,8 @@ const VideoSection = () => {
                                     <p className="text-secondary-video">Completed projects</p>
                                 </Col>
                                 <Col md={3} className="py-3 stats-box flex-grow-1 text-start" data-aos="fade-up">
-                                    <h1 className="text-warning fw-bold">{users} k</h1>
-                                    <p className="text-secondary-video">Users of our projects</p>
+                                    <h1 className="text-warning fw-bold">{users}+</h1>
+                                    <p className="text-secondary-video">Happy Clients</p>
                                 </Col>
                             </Row>
                         </Container>
