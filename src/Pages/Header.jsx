@@ -21,9 +21,14 @@ const Header = () => {
     <div className="navbar-section1">
       <Navbar expand="lg" className="custom-navbar">
         <div className="container-fluid">
-          <Navbar.Brand as={Link} to="/" className="logo" onClick={() => setShow(false)}>
-            <span className="logo-suffix">BM Techx</span>
-          </Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className="logo" onClick={() => setShow(false)}>
+          <img
+            src="/image/Bm Techx logo.png" // Make sure the path is correct (e.g. /assets/logo.png or from public folder)
+            alt="BM Techx"
+            className="navbar-logo"
+          />
+        </Navbar.Brand>
+
 
           <Navbar.Toggle
             aria-controls="offcanvasNavbar"
@@ -45,6 +50,10 @@ const Header = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="nav-links">
+              <Nav.Link as={Link} to="/About" className="custom-nav-link" onClick={() => setShow(false)}>
+                  About
+                </Nav.Link>
+
                 <NavDropdown
                   title="Services"
                   id="services-dropdown"
@@ -73,6 +82,7 @@ const Header = () => {
                   </NavDropdown.Item>
                 </NavDropdown>
 
+                
                 <Nav.Link as={Link} to="/cases" className="custom-nav-link" onClick={() => setShow(false)}>
                   Cases
                 </Nav.Link>

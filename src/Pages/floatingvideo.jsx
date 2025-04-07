@@ -3,40 +3,70 @@ import React, { useState, useRef, useEffect } from 'react';
 const FloatingVideoPlayer = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [isFading, setIsFading] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const videoRef = useRef(null);
 
-  // Sample Instagram-style portrait video (9:16 aspect ratio)
-  const videoUrl = "Banners/floatingvideo.mp4"; // Replace with your video URL
+  const videoUrl = "Banners/floatingvideo.mp4"; // Replace with your actual video path
 
   const handleClose = () => {
     setIsFading(true);
     setTimeout(() => {
       setIsVisible(false);
-    }, 300); // Match this with the CSS transition duration
+    }, 300);
   };
 
-  // Ensure video maintains portrait aspect ratio
+  // Handle autoplay and aspect ratio
   useEffect(() => {
     if (videoRef.current) {
       videoRef.current.style.aspectRatio = '9/16';
+      videoRef.current.muted = isMuted;
+      const playPromise = videoRef.current.play();
+      if (playPromise !== undefined) {
+        playPromise.catch((error) => {
+          console.warn("Autoplay might be blocked by browser:", error);
+        });
+      }
     }
-  }, []);
+  }, [isMuted]);
+
+  const handleMouseEnter = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = false;
+      setIsMuted(false);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (videoRef.current) {
+      videoRef.current.muted = true;
+      setIsMuted(true);
+    }
+  };
+
+  const handleClick = () => {
+    if (videoRef.current) {
+      const currentlyMuted = videoRef.current.muted;
+      videoRef.current.muted = !currentlyMuted;
+      setIsMuted(!currentlyMuted);
+    }
+  };
 
   if (!isVisible) return null;
 
   return (
-    <div 
+    <div
       className={`floating-video-container ${isFading ? 'fade-out' : ''}`}
       style={{
         position: 'fixed',
         bottom: '20px',
         left: '20px',
-        width: '150px', // Reduced from 300px to make it more compact
-        borderRadius: '8px', // Slightly smaller border radius
+        width: '150px',
+        borderRadius: '8px',
         overflow: 'hidden',
-        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.15)', // Lighter shadow
+        boxShadow: '0 4px 8px rgba(0, 0, 0, 0.15)',
         zIndex: 1000,
         transition: 'opacity 0.3s ease',
+        backgroundColor: '#000',
       }}
     >
       <div style={{ position: 'relative' }}>
@@ -45,34 +75,39 @@ const FloatingVideoPlayer = () => {
           src={videoUrl}
           autoPlay
           loop
-          muted
           playsInline
+          muted={isMuted}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          onClick={handleClick}
           style={{
             width: '100%',
             height: 'auto',
             display: 'block',
             objectFit: 'cover',
+            cursor: 'pointer',
           }}
         />
         <button
           onClick={handleClose}
           style={{
             position: 'absolute',
-            top: '4px', // Reduced from 8px
-            right: '4px', // Reduced from 8px
-            background: 'rgba(0, 0, 0, 0.5)',
+            top: '8px',
+            right: '4px',
+            background: 'none',
             color: 'white',
             border: 'none',
             borderRadius: '50%',
-            width: '20px', // Smaller close button
-            height: '20px', // Smaller close button
+            width: '20px',
+            height: '20px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             cursor: 'pointer',
-            fontSize: '14px', // Smaller font
+            fontSize: '20px',
             fontWeight: 'bold',
           }}
+          aria-label="Close video"
         >
           ×
         </button>

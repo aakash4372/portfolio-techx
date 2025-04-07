@@ -6,6 +6,7 @@ import Footer from "./Pages/Footer";
 import Case from "./Mainfile/Case";
 import ScrollToTop from "./Mainfile/ScrollToTop"; 
 import './App.css'
+import Aboutsection from "./Mainfile/Aboutpage";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Section1 />} />
           <Route path="/cases" element={<Case />} />
+          <Route path="/about" element={<Aboutsection />} />
         </Routes>
         <Footer />
       </div>

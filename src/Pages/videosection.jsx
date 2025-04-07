@@ -95,19 +95,19 @@ const VideoSection = () => {
                                     <AvatarGroup max={4} sx={{ '& .MuiAvatar-root': { width: 70, height: 70 } }}>
                                         <Avatar
                                             alt="Profile 1"
-                                            src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?fm=jpg&q=60&w=3000"
+                                            src="/profiles/snega.jpg"
                                         />
                                         <Avatar
                                             alt="Profile 2"
-                                            src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?fm=jpg&q=60&w=3000"
+                                            src="/profiles/karthika.jpg"
                                         />
                                         <Avatar
                                             alt="Profile 3"
-                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE6-KsNGUoKgyIAATW1CNPeVSHhZzS_FN0Zg&s"
+                                            src="/profiles/aakash.png"
                                         />
                                         <Avatar
                                             alt="Profile 4"
-                                            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?fm=jpg&q=60&w=3000"
+                                            src="/profiles/charles.png"
                                         />
                                     </AvatarGroup>
                                     <p className="text-secondary-video text-end mt-2" style={{color:'#',fontWeight:'500'}}>16 professionals</p>

@@ -12,6 +12,7 @@ import ProcessStep from '../Pages/ProcessStep'
 import Imagemarquee from '../Pages/imagemarqueeslide'
 import FAQ from '../Pages/Questionandanswer'
 import FloatingVideo from '../Pages/floatingvideo'
+import WhatsAppFloat from '../Pages/Floatingwhatsapp'
 
 export default function Section1() {
   return (
@@ -28,6 +29,7 @@ export default function Section1() {
       <Imagemarquee/>
       <ProcessStep/>
       <FloatingVideo/>
+      <WhatsAppFloat/>
       <FAQ/>     
     </div>
   )
