@@ -19,10 +19,16 @@
   }
   
   .marquee-img {
-    width: 130px; /* Adjust size */
+    width: 130px;
     height: auto;
     margin: 0 15px;
     border-radius: 10px;
+    filter: grayscale(1); /* Make grayscale by default */
+    transition: filter 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  .marquee-img:hover {
+    filter: grayscale(0); /* Restore color on hover */
   }
   
   @keyframes marquee-scroll {

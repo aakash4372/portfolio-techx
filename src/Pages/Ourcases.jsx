@@ -141,7 +141,7 @@ const CasesSection = () => {
         {visibleItems < casesData.length && (
           <div className="bottom-btn pt-4 pb-5">
             <Button className="view-more-btn" onClick={handleViewMore}>
-              View More
+            View More Cases
             </Button>
           </div>
         )}

@@ -49,11 +49,21 @@ export default function HeroSection() {
 
                 {/* Rating Section */}
                 <div className="rating-section text-center py-4">
-                    <div className="rating-badge d-inline-flex align-items-center justify-content-center">
-                        <span className="rating-text">4.5</span>
-                        <FaStar className="star-icon" />
-                    </div>
-                </div>
+  {/* Rating Badge */}
+  <div className="rating-badge d-inline-flex align-items-center justify-content-center mb-3">
+    <span className="rating-text">4.8</span>
+    <FaStar className="star-icon" />
+  </div>
+
+  {/* Brand Logos */}
+  <div className="brand-logos flex justify-center items-center gap-4 mt-2">
+    <img src="/Brand/logo1.png" alt="Logo 1" width={100} />
+    <img src="/Brand/logo2.png" alt="Logo 2" width={100} />
+    <img src="/Brand/logo10.png" alt="Logo 3" width={100} />
+    <img src="/Brand/logo5.png" alt="Logo 4" width={100} />
+  </div>
+</div>
+
             </div>
         </div>
     );

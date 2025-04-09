@@ -100,10 +100,10 @@ const Aboutinfosection = () => {
                     max={4}
                     sx={{ "& .MuiAvatar-root": { width: 70, height: 70 } }}
                   >
-                    <Avatar alt="Profile 1" src="/profiles/snega.jpg" />
-                    <Avatar alt="Profile 2" src="/profiles/karthika.jpg" />
-                    <Avatar alt="Profile 3" src="/profiles/aakash.png" />
-                    <Avatar alt="Profile 4" src="/profiles/charles.png" />
+                    <Avatar alt="Profile 1" src="/profiles/person1.jpg" />
+                    <Avatar alt="Profile 2" src="/profiles/person2.jpg" />
+                    <Avatar alt="Profile 3" src="/profiles/person3.jpg" />
+                    <Avatar alt="Profile 4" src="/profiles/person4.jpg" />
                   </AvatarGroup>
                   <p
                     className="text-secondary-video text-end mt-2"

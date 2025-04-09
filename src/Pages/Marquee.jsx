@@ -5,16 +5,16 @@ import "./css/Marquee.css"; // Import CSS file for styling
 
 const MarqueeSlider = () => {
   const images = [
-    "/image/logo1.webp",
-    "/image/logo2.webp",
-    "/image/logo3.webp",
-    "/image/logo4.webp",
-    "/image/logo5.webp",
-    "/image/logo6.webp",
-    "/image/logo7.webp",
-    "/image/logo8.webp",
-    "/image/logo9.webp",
-    "/image/logo10.webp",
+    "/Brand/logo1.png",
+    "/Brand/logo2.png",
+    "/Brand/logo3.png",
+    "/Brand/logo4.png",
+    "/Brand/logo5.png",
+    "/Brand/logo6.png",
+    "/Brand/logo7.png",
+    "/Brand/logo8.png",
+    "/Brand/logo9.png",
+    "/Brand/logo10.png",
   ];
 
   return (
