@@ -50,7 +50,7 @@ export default function HeroSection() {
                 {/* Rating Section */}
                 <div className="rating-section text-center py-4">
                     <div className="rating-badge d-inline-flex align-items-center justify-content-center">
-                        <span className="rating-text">5.0</span>
+                        <span className="rating-text">4.5</span>
                         <FaStar className="star-icon" />
                     </div>
                 </div>
