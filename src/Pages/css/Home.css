@@ -316,7 +316,7 @@
         font-size: 15px;
       }
 }
-
+/* 
 @media (max-width: 350px) {
     .display-4 {
         font-size: 4rem !important;
@@ -355,4 +355,31 @@
     .home-section .text-secondary{
         font-size: 15px;
       }
+} */
+
+@media (min-width: 359px) and (max-width: 368px) {
+    .display-4 {
+        font-size: 4.9rem !important;
+    }
+    .top-image {
+        width: 200px !important;
+        height: 200px !important;
+    }
 }
+@media (min-width: 368px) and (max-width: 481px) {
+    .display-4 {
+        font-size: 5.4rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand-logos img {
+      width: 80px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .brand-logos img {
+      width: 60px;
+    }
+  }
