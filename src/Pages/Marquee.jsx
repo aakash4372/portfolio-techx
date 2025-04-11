@@ -18,7 +18,7 @@ const MarqueeSlider = () => {
   ];
 
   return (
-    <div className="Marquee-section mb-0">
+    <div className="Marquee-section mb-0 pt-3">
         <Container fluid className="marquee-container">
       <div className="marquee-wrapper">
         <div className="marquee">

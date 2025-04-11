@@ -65,7 +65,7 @@ const VideoSection = () => {
     }, [startCount]);
 
     return (
-        <div className="Videosection text-light py-5">
+        <div className="Videosection text-light">
             <Container>
                 {/* '''''''<Row className="justify-content-center">
                     <Col md={12} className="text-center">
@@ -82,7 +82,7 @@ const VideoSection = () => {
                             <Row className="align-items-center text-center text-md-start">
                                 <Col md={8}>
                                     <h2 className="fw-bold">
-                                    We are a passionate team of tech experts
+                                    We're a passionate team of tech experts
                                     — delivering innovative solutions and driving business growth.
                                     </h2>
                                     <p className="text-secondary-video">

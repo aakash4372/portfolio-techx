@@ -126,6 +126,7 @@ const Aboutpage = () => {
           </Col>
         </Row>
       </Container>
+
     </div>
   );
 };

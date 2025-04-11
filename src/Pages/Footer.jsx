@@ -22,14 +22,17 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer text-light py-5">
-      <Container className="footer-container">
+    <footer className="footer text-light">
+     <div className="footer-section-one">
+     <Container className="footer-container" >
         <div className="text-center mb-4">
           <img src="Banners/Logo.png" alt="Illustration" className="illustration mb-3" />
           <h2>Have a big idea?</h2>
           <h6 className="footer-text-h6 text-center">Let's bring it to life together!</h6>
           <Button variant="warning"  onClick={bookFreeCall}>Get started</Button>
         </div>
+          
+          <div className="footer-top-fade-background mb-4"></div>
 
         <Row className="w-100">
         {/* Logo and Tagline */}
@@ -84,6 +87,7 @@ const Footer = () => {
           <h5 className="mb-0 pb-0 copy-right">&copy; {new Date().getFullYear()} BMTechx.in  All rights reserved.</h5>
         </div>
       </Container>
+     </div>
     </footer>
   );
 };

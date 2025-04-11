@@ -46,8 +46,8 @@ const WhyChooseUs = () => {
   return (
     <div className="why-choose-container">
       <Container className="py-2">
-        <h2 className="text-center fw-bold mb-5">
-          Why Choose BM TechX for Your Product Design?
+        <h2 className="text-center why-choose-text fw-bold mb-5">
+          Why Choose BM Techx for Your Product Design?
         </h2>
         <Row className="g-4">
           {services.map((service, index) => (

@@ -1,7 +1,7 @@
 import "./css/cardeffort.css";
 import React from "react";
 import { motion } from "framer-motion";
-import { bookFreeCall } from "../Whatsapp/whatsappUtils"; // Import WhatsApp utility
+import { bookFreeCall } from "../Whatsapp/whatsappUtils";
 
 const ZigzagCards = () => {
   const cards = [
@@ -49,29 +49,29 @@ const ZigzagCards = () => {
 
   return (
     <div className="cardeffort">
-      <h2 className="text-center fw-bold pt-5 pb-5 mb-5">Our Services</h2>
-      <div className="container my-5">
+      <h2 className="text-center card-top-text fw-bold pb-3">Our services</h2>
+      <div className="container px-md-4 px-lg-5"> {/* Added responsive padding */}
         {cards.map((card, index) => (
           <motion.div
             key={card.id}
-            className={`row mb-4 align-items-center ${index % 2 === 0 ? "" : "flex-row-reverse"}`}
+            className={`row gx-md-4 mb-4 align-items-center ${index % 2 === 0 ? "" : "flex-row-reverse"}`}
             initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true, amount: 0.2 }}
           >
-            <div className="col-md-6 mb-2">
-              <img src={card.image} alt={`Card ${card.id}`} className="img-fluid" />
+            <div className="col-md-6 mb-2 px-md-3"> {/* Added padding */}
+              <img src={card.image} alt={`Card ${card.id}`} className="img-fluid w-100" />
             </div>
-            <div className="col-md-6">
+            <div className={`col-md-6 card-text-col px-md-4 ${index % 2 === 0 ? 'ps-md-3' : 'pe-md-3'}`}>
               <img src={card.logo} alt="Logo" className="logo-img mb-4 mt-3" />
               <h2 className="heading-with-logo">
                 <span>{card.heading}</span>
               </h2>
               <p>{card.text}</p>
               <button 
-                className="btn btn-primary" 
-                onClick={bookFreeCall} // Using the imported WhatsApp function
+                className="btn btn-primary mb-4" 
+                onClick={bookFreeCall}
               >
                 {card.buttonText}
               </button>

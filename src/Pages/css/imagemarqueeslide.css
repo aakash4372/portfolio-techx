@@ -7,14 +7,14 @@
 
 .Imagemarqueeslid  h1 {
     font-weight: bold;
-    font-family: var(--font2);
+    font-family: var( --font-raleway);
     font-size: 64px;
     color: black; /* Dark color */
 }
 
 .Imagemarqueeslid  p {
     font-size: 20px;
-    color: black; /* Slightly lighter dark shade */
+    color: rgba(0, 0, 0, 0.795) !important; /* Slightly lighter dark shade */
     max-width: 600px;
     font-weight: 500;
     font-family: var(--font2);
@@ -64,7 +64,10 @@
   }
    /* View More Button */
   .Imagemarqueeslid .btn-dark {
-    background-color: black;
+    background: 
+  linear-gradient(rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0.795)), /* dark overlay */
+  url("/image/dotbutton.png") no-repeat center/cover, 
+  black !important;
     color: white;
     font-weight: 500;
     border: none;
@@ -76,12 +79,14 @@
     justify-content: center;
     gap: 10px;
     position: relative;
-    transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
   
   .Imagemarqueeslid .btn-dark:hover {
-    background-color: rgb(32, 32, 32);
-    color: white !important;
+    background: 
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), /* darker on hover */
+      url("/image/dotbutton.png") no-repeat center/cover,
+      black !important;
   }
 
 @media (max-width: 1200px) {

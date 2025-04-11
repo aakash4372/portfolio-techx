@@ -32,7 +32,7 @@ const Imagemarquee = () => {
                     <>
                         <h1 >Innovate to Elevate</h1>
                         <p className="lead pt-3 text-center">
-                        BM TechX is your reliable technology partner, delivering cutting-edge solutions that drive growth, enhance efficiency, and maximize business potential.
+                        BM Techx is your reliable technology partner, delivering cutting-edge solutions that drive growth, enhance efficiency, and maximize business potential.
                         </p>
                         <div className="bottom-btn">
                         <Button className="btn-dark mt-4" onClick={bookFreeCall}>Become a Client</Button>

@@ -12,8 +12,7 @@
 
 /* Background with Gradient */
 .faq-section {
-    background: radial-gradient(circle at top right, rgb(255, 221, 0) -120%, transparent 25%),
-        #010101;
+
     padding: 50px 0;
 }
 

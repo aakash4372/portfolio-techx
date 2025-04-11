@@ -1,9 +1,4 @@
-.image-section-bg{
-    background: 
-  linear-gradient(to top, #55410600, transparent 60%), /* Top fade effect */
-  radial-gradient(circle at bottom left, rgba(182, 158, 6, 0.397) 0%, rgba(255, 221, 0, 0.11) 30%, transparent 60%)
-  black !important;
-}
+
 .fullscreen-container {
     height: auto; /* Full viewport height */
     width: 100%; /* Full width */

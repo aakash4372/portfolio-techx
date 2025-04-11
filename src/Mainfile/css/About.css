@@ -1,6 +1,17 @@
+
+.about-section-bg{
+  background:
+  /* Top-right yellow fade */
+  radial-gradient(circle at top right, rgba(255, 221, 0, 0.3) 0%, transparent 40%),
+
+  /* Middle-right yellow glow */
+  radial-gradient(circle at 10% 70%, rgba(255, 221, 0, 0.15) 0%, rgba(255, 221, 0, 0.08) 10%, transparent 90%),
+
+  /* Base background: black */
+  black !important;
+}
+
 .about-section {
-  background: radial-gradient(circle at top right, rgba(255, 221, 0, 0.755) -50%, transparent 45%),
-      radial-gradient(circle at bottom left, rgba(255, 221, 0, 0.7) -90%, transparent 50%), black;
   position: relative;
   overflow: hidden;
   z-index: 0;

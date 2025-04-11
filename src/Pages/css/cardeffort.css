@@ -1,114 +1,201 @@
 .cardeffort {
-    background-color: #111;
-    color: #fff;
-    padding: 50px 0;
-  }
-  
-  .cardeffort .container {
-    max-width: 1200px;
-  }
-  
-  .cardeffort .row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 90px 10px;
-    border-radius: 10px;
-    background: #1a1a1a;
-    border: 2px solid #474747;
-    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
-  }
-  
+  background-color: #010101;
+  color: #fff;
+  padding: 50px 0;
+}
 
-  /* Styling for Heading with Logo */
-  .heading-with-logo {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Space between logo and heading */
+/* Container adjustments */
+.cardeffort .container {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .cardeffort .container {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
-  
-  .logo-img {
-    width: 65px; /* Adjust size as needed */
-    height: 65px;
-    object-fit: contain;
+}
+
+.cardeffort .card-top-text {
+  font-size: 3.9rem !important;
+  font-weight: 500 !important;
+  text-align: center;
+  color: white;
+  font-family: var(--font-Commissioner);
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+  .cardeffort .card-top-text {
+    font-size: 3.5rem !important;
   }
-  
-  /* Text Styling */
-  .cardeffort .col-md-6 h2 {
-    font-size: 28px;
-    font-weight: 700;
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .cardeffort .card-top-text {
+    font-size: 3rem !important;
+    margin-bottom: 25px;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .cardeffort .card-top-text {
+    font-size: 2.5rem !important;
+    margin-bottom: 20px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .cardeffort .card-top-text {
+    font-size: 2rem !important;
     margin-bottom: 15px;
   }
-  
-  .cardeffort .col-md-6 p {
-    font-size: 16px;
-    opacity: 0.8;
-    line-height: 1.5;
-  }
-  
-  .cardeffort .img-fluid {
-    max-width: 100%;
-    border-radius: 8px;
-  }
-  
-  /* Button Styling */
-  .cardeffort .btn {
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 6px;
-    text-transform: uppercase;
-    transition: 0.3s;
-  }
-  
+}
 
-  .cardeffort .btn-primary {
-    background: url('/image/dotbutton.png') no-repeat center/cover, #f4cb00ef !important;
-    color: black;
-    font-weight: bold;
-    border: none;
-    padding: 17px 39px;
-    border-radius: 30px;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    position: relative;
-    transition: background 0.3s ease-in-out;
+/* Very small devices (phones, less than 400px) */
+@media (max-width: 399.98px) {
+  .cardeffort .card-top-text {
+    font-size: 2.1rem !important;
   }
-  
-  .cardeffort .btn-primary:hover {
-    background: url('/image/dotbutton.png') no-repeat center/cover, #c49f0c !important;
-    color: black !important;
-  }
-  
+}
 
+/* Card row styling */
+.cardeffort .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0;
+  border-radius: 20px;
+  background: #1a1a1a;
+  border: 1px solid #dbd8d870;
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+  overflow: hidden;
+}
+
+.cardeffort .row:last-child {
+  margin-bottom: 0;
+}
+
+/* Column spacing */
+@media (min-width: 768px) {
+  .cardeffort .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
   
+  .cardeffort .col-md-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+/* Text column adjustments */
+.cardeffort .card-text-col {
+  padding: 25px;
+}
+
+@media (min-width: 768px) {
+  .cardeffort .card-text-col {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
+/* Rest of your existing CSS remains the same */
+.heading-with-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+.cardeffort .heading-with-logo {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.cardeffort .col-md-6 p {
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.cardeffort .img-fluid {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+}
+
+.cardeffort .img-fluid:hover {
+  transform: scale(1.02);
+}
+
+.cardeffort .btn-primary {
+  background: url('/image/dotbutton.png') no-repeat center/cover, #f4cb00ef !important;
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 30px;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.cardeffort .btn-primary:hover {
+  background: url('/image/dotbutton.png') no-repeat center/cover, #c49f0c !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .cardeffort h2 {
-    font-size: 4rem;
-    text-align: center;
-    color: white;
-    font-family: var(--font2);
-  }
-  
-  @media (max-width: 991.98px) {
-   
-    .cardeffort h2 {
-      font-size: 3rem;
-    }
-   
-  }
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  font-family: var(--font2);
+}
 
-  
-  @media (max-width: 768px) {
-    .cardeffort h2 {
-      font-size: 2.5rem;
-    }
+@media (max-width: 991.98px) {
+  .cardeffort h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardeffort h2 {
+    font-size: 2.5rem;
+  margin-bottom: 30px;
   }
   
-  @media (max-width: 576px) {
-    .cardeffort h2 {
-      font-size: 2rem;
-    }
+  .cardeffort .card-text-col {
+    padding: 20px !important;
   }
+}
+
+@media (max-width: 576px) {
+  .cardeffort h2 {
+    font-size: 2rem;
+  }
+  
+  .cardeffort {
+    padding: 30px 0;
+  }
+}

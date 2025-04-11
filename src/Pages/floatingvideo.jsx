@@ -15,10 +15,9 @@ const FloatingVideoPlayer = () => {
     }, 300);
   };
 
-  // Handle autoplay and aspect ratio
+  // Handle autoplay
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.style.aspectRatio = '9/16';
       videoRef.current.muted = isMuted;
       const playPromise = videoRef.current.play();
       if (playPromise !== undefined) {
@@ -60,7 +59,7 @@ const FloatingVideoPlayer = () => {
         position: 'fixed',
         bottom: '20px',
         left: '20px',
-        width: '150px',
+        width: '120px',
         borderRadius: '8px',
         overflow: 'hidden',
         boxShadow: '0 4px 8px rgba(0, 0, 0, 0.15)',
@@ -82,7 +81,7 @@ const FloatingVideoPlayer = () => {
           onClick={handleClick}
           style={{
             width: '100%',
-            height: 'auto',
+            height: '200px', // ✅ Set fixed height here
             display: 'block',
             objectFit: 'cover',
             cursor: 'pointer',

@@ -3,7 +3,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import "./css/Textimage.css";
 const Textimage = () => {
   const text =
-    "Establishing a strong online presence is essential for business growth. At BM TechX, we help you make a powerful impact from the start. Whether you’re a startup or an established enterprise, we provide cutting-edge, market-ready tech solutions designed to fuel your growth and ensure long-term success.";
+    "Establishing a strong online presence is essential for business growth. At BM Techx, we help you make a powerful impact from the start. Whether you’re a startup or an established enterprise, we provide cutting-edge, market-ready tech solutions designed to fuel your growth and ensure long-term success.";
 
   const words = text.split(" "); // Splitting text into words
   const [visibleWords, setVisibleWords] = useState(Array(words.length).fill("grey"));
@@ -47,7 +47,7 @@ const Textimage = () => {
 
   return (
     <section className="hero-section" ref={sectionRef} id="about-us">
-      <Container className=" mb-5">
+      <Container className="">
         <Row className="align-items-center">
           {/* Left Side - Text */}
           <Col lg={6} md={6} sm={12} className="text-section text-start">
@@ -56,7 +56,7 @@ const Textimage = () => {
             Your Reliable <br />
               <span className="highlight">Partner for Market Success</span>
             </h1>
-            <p>
+            <p className="pt-4">
               {words.map((word, index) => (
                 <span key={index} style={{ color: visibleWords[index], transition: "color 0.5s ease-in-out" }}>
                   {word}{" "}

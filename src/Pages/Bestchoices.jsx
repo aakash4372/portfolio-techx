@@ -10,7 +10,7 @@ const BestChoice = () => {
 
   return (
     <div className="table-section">
-      <h2 className="text-center fw-bold pt-5 pb-5 mb-5">Your Best Choice</h2>
+      <h2 className="text-center table-top-text fw-bold pb-5">Your best choice</h2>
       <section className="best-choice text-white best-choice--home section--visible d-flex justify-content-center align-items-center">
         <div className="container">
           <div className="best-choice__content">

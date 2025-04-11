@@ -1,6 +1,9 @@
 /* Main Container */
+.process-section-bg {
+  background: 
+    #010101;                        /* base black background */
+}
 .process-container {
-    background-color: #010101;
     padding: 50px 0;
     display: flex;
     justify-content: center;
@@ -37,7 +40,7 @@
 /* Title and Description */
 .process-title {
     font-size: 39px;
-    font-weight: bold;
+    font-weight: 600;
     margin-top: 10px;
     text-align: left;
 }

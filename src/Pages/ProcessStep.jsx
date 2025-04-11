@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import "./css/ProcessStep.css";
 import { bookFreeCall } from "../Whatsapp/whatsappUtils";
+import FAQ from "./Questionandanswer";
 
 const steps = [
   {
@@ -68,7 +69,8 @@ const ProcessStep = () => {
   }, []);
 
   return (
-    <Container fluid className="process-container">
+    <div className="process-section-bg">
+      <Container fluid className="process-container">
       <Row className="justify-content-center pt-5 pb-5">
         {/* Left Side Content */}
         <Col md={6} className="text-light text-start">
@@ -105,6 +107,11 @@ const ProcessStep = () => {
 
 
     </Container>
+    
+    <div>
+      <FAQ/>
+    </div>
+    </div>
   );
 };
 
