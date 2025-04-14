@@ -129,7 +129,10 @@
 
   .Videosection h2 {
     font-size: 2rem !important;
-    text-align: center;
+    text-align: start;
+  }
+  .text-secondary-video{
+    text-align: start;
   }
 
   .Videosection .stats-box {
