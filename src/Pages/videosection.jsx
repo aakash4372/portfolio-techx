@@ -76,7 +76,7 @@ const VideoSection = () => {
                     </Col>
                 </Row>''''''' */}
 
-                <Card className="text-light mt-4 p-4 border-0 rounded-5 video-card position-relative" data-aos="fade-up">
+                <Card className="text-light p-4 border-0 rounded-5 video-card position-relative" data-aos="fade-up">
                     <Card.Body>
                         <Container>
                             <Row className="align-items-center text-center text-md-start">

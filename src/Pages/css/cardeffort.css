@@ -1,9 +1,16 @@
 .cardeffort {
-  background-color: #010101;
+background-color: #1a1a1a;
   color: #fff;
   padding: 50px 0;
 }
 
+
+/* If you want to limit the maximum size of the image */
+@media (min-width: 768px) {
+  .services-header-container::before {
+    background-size: 50% auto; /* Adjust percentage as needed */
+  }
+}
 /* Container adjustments */
 .cardeffort .container {
   max-width: 1200px;

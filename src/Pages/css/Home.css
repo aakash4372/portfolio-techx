@@ -357,7 +357,8 @@
 }
 .brand-logos img {
   width: 80px;
-  filter: grayscale(1);
+  filter: grayscale(0.9);
+  opacity: 0.5; 
 }
 @media (max-width: 768px) {
   .brand-logos img {

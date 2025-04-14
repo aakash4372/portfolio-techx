@@ -18,7 +18,7 @@ const BestChoice = () => {
               {/* First Row */}
               <li className="best-choice__li">
                 <div className="best-choice__li-body">
-                  <div className="best-choice__li-body-cell">Service</div>
+                  <div className="best-choice__li-body-cell"></div>
                   <div className="best-choice__li-body-cell">Onboarding time</div>
                   <div className="best-choice__li-body-cell">Request Handling</div>
                   <div className="best-choice__li-body-cell">Project Completion Time</div>
@@ -122,7 +122,7 @@ const BestChoice = () => {
               {/* Fifth Row */}
               <li className="best-choice__li">
                 <div className="best-choice__li-body">
-                  <div className="best-choice__li-body-cell">Direct Hiring</div>
+                  <div className="best-choice__li-body-cell">Hiring</div>
                   <div className="best-choice__li-body-cell">May take 1-2 weeks</div>
                   <div className="best-choice__li-body-cell">Time-consuming with extensive explanations</div>
                   <div className="best-choice__li-body-cell">Completion within 3-7 business days</div>

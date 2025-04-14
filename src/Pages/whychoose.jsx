@@ -53,15 +53,21 @@ const WhyChooseUs = () => {
           {services.map((service, index) => (
             <Col key={index} md={6}>
               <Card className="h-100 text-start p-4 border-0 text-dark">
-                <div className="image-box mb-3">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="img-fluid service-image"
-                  />
+                <div className="card-content-wrapper">
+                  <div className="content-row">
+                    <div className="image-box">
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="img-fluid service-image"
+                      />
+                    </div>
+                    <div>
+                      <Card.Title className="fw-bold">{service.title}</Card.Title>
+                      <Card.Text>{service.description}</Card.Text>
+                    </div>
+                  </div>
                 </div>
-                <Card.Title className="fw-bold">{service.title}</Card.Title>
-                <Card.Text>{service.description}</Card.Text>
               </Card>
             </Col>
           ))}

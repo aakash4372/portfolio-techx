@@ -5,7 +5,6 @@ import "./Case.css";
 
 const projects = [
   {
-    id: 1,
     title: "FreshBounty",
     description:
       "At BM Techx, we developed a dynamic e-commerce website designed to revolutionize online shopping. With a user-friendly interface and advanced features, the platform ensures a seamless shopping experience for customers. It integrates intuitive navigation, secure payment options, and responsive design to cater to diverse user needs, enhancing both convenience and engagement.",
@@ -13,14 +12,12 @@ const projects = [
     link: "https://freshbounty.store",
   },
   {
-    id: 2,
     title: "Red Collar App Development",
     description:
       "Building efficient, user-friendly, and scalable mobile applications is our forte. BM Techx specializes in developing innovative mobile apps like Red Collar. Our team ensures that every app we create combines sleek design with cutting-edge technology to deliver seamless performance. From ideation to deployment, our process guarantees apps tailored to meet user needs, industry standards, and market trends. Trust us to turn your vision into a reality with robust backend support and intuitive UI/UX.",
     image: "Banners/p13.png",
   },
   {
-    id: 3,
     title: "TravellersNeed",
     description:
       "BM Techx has successfully developed a cutting-edge tour package planning website tailored for travel enthusiasts. This platform streamlines trip planning by offering personalized itineraries, seamless bookings, and destination guides, all in one place. With user-friendly navigation and advanced features, it provides a hassle-free experience, ensuring every traveler can plan their dream vacation effortlessly.",
@@ -28,7 +25,20 @@ const projects = [
     link: "https://travellersneed-client.onrender.com",
   },
   {
-    id: 4,
+    title: "Bezooz",
+    description:
+      "We at BM Techx designed and developed the Bezooz platform to transform the learning experience. Focused on interactivity and personalized education, we crafted a user-friendly and modern design to empower students and educators alike. With seamless navigation and innovative features, we’ve built a digital space that redefines learning.",
+    image: "Banners/p14.png",
+    link: "https://www.bezooz.com/in",
+  },
+  {
+    title: "Rk Global Associatees",
+    description:
+      "BM Techx designed the website for RK Global Associates, and they did a great job. The site is neat, user-friendly, and easy to navigate. It works well on both mobile and desktop devices. The layout is clean, with all services clearly explained. Overall, the website looks professional and helps build trust with visitors.",
+    image: "Banners/p17.png",
+    link: "https://rkglobalassociatees.com/",
+  },
+  {
     title: "CHINNA CLEANING FACILITY",
     description:
       "BM Techx presents the Professional Cleaning Website, a comprehensive platform designed to optimize cleaning operations for residential, commercial, and industrial spaces. Enhance your cleaning services with streamlined processes, improved productivity, and exceptional client satisfaction.",
@@ -36,7 +46,6 @@ const projects = [
     link: "https://chinnacleaningfacility.com/",
   },
   {
-    id: 5,
     title: "LearnEng",
     description:
       "At BM Techx, we developed a dynamic website for Communicative English Training Institute, designed to facilitate effective language learning. With an intuitive interface and engaging features, the platform enhances the learning experience for students.",
@@ -44,7 +53,6 @@ const projects = [
     link: "https://learnengedu.com/",
   },
   {
-    id: 6,
     title: "Hunts World Properties",
     description:
       "BM Techx proudly presents the Hunts World Properties website, a modern and user-friendly platform designed to streamline real estate transactions. Our goal was to create a seamless experience for buyers, sellers, and investors, ensuring easy access to property listings, services, and expert guidance. At BM Techx, we are committed to building high-performance websites that enhance business visibility and customer engagement. Hunts World Properties now has a powerful online presence to serve its clients better.",
@@ -52,7 +60,6 @@ const projects = [
     link: "https://huntsworldproperties.com/",
   },
   {
-    id: 7,
     title: "JK Coaching Academy",
     description:
       "BM Techx proudly presents the JK Coaching Academy website, designed to provide a seamless and interactive learning experience. The platform offers offline and online coaching, mock tests, study materials, and career guidance, making education accessible to all. With an easy-to-use interface and features like enquiry forms and structured courses, the website helps students achieve their academic and career goals. JK Coaching Academy is committed to excellence, ensuring every learner gets the best guidance and support.",
@@ -60,15 +67,13 @@ const projects = [
     link: "https://jkcoachingacademy.com/",
   },
   {
-    id: 8,
     title: "Zhagaram Academy of Learning and Teaching",
     description:
-      "BM Techx proudly presents the Zhagaram Academy of Learning and Teaching (ZALT) website, designed to seamlessly blend innovation with functionality. This platform highlights ZALT’s wide-ranging services, including offline coaching, online classes, home tutoring, workshops, and digital learning resources. With easy navigation and interactive features such as enquiry forms, the website ensures accessibility for students, educators, and parents alike. It reflects ZALT’s dedication to quality education through its publications, career guidance programs, and free virtual classes. BM Techx delivers a platform that embodies ZALT's mission while empowering learners to achieve their goals..",
+      "BM Techx proudly presents the Zhagaram Academy of Learning and Teaching (ZALT) website, designed to seamlessly blend innovation with functionality. This platform highlights ZALT’s wide-ranging services, including offline coaching, online classes, home tutoring, workshops, and digital learning resources. With easy navigation and interactive features such as enquiry forms, the website ensures accessibility for students, educators, and parents alike. It reflects ZALT’s dedication to quality education through its publications, career guidance programs, and free virtual classes. BM Techx delivers a platform that embodies ZALT's mission while empowering learners to achieve their goals.",
     image: "Banners/p12.png",
     link: "https://zaltindia.in/",
   },
   {
-    id: 9,
     title: "Rain Info Tech",
     description:
       "We create stunning websites that captivate and engage users. Our designs are tailored to meet client expectations with perfection. Rainpic Infotech is a reflection of our expertise and creativity. We prioritize seamless user experience and modern aesthetics. Client satisfaction is our top priority in every project we deliver. Let’s build a remarkable digital presence for your brand!",
@@ -76,7 +81,6 @@ const projects = [
     link: "https://rainpicinfotech.com/",
   },
   {
-    id: 10,
     title: "NSA Holidays Kodaikannal",
     description:
       "BM Techx crafts exceptional websites tailored to client needs. We blend creativity with technology to deliver seamless digital experiences. Our websites are designed for performance, aesthetics, and user engagement. Every project reflects our commitment to quality and innovation. We transform ideas into visually striking and functional websites. Your vision, our expertise—together, we create stunning digital success!",
@@ -84,7 +88,6 @@ const projects = [
     link: "https://nsaholidayskodaikanal.com/",
   },
   {
-    id: 11,
     title: "MyGoldInternational",
     description:
       "At BM Techx, we developed MyGold International, a secure and user-friendly platform for gold trading and investment. With a responsive design and advanced security, it ensures a seamless experience for users.",
@@ -92,14 +95,12 @@ const projects = [
     link: "https://mygoldinternational.com/",
   },
   {
-    id: 12,
     title: "Poclane",
     description:
-      "BM Techx offers top-notch website development services, including the dynamic Poclane website. Our development process blends creativity with technology to craft responsive, interactive, and secure websites. By employing the latest tools and techniques, we ensure optimal functionality and aesthetics. Whether it's e-commerce, corporate, or personal websites, BM Techx guarantees solutions that smplify your digital presence and elevate user experience..",
+      "BM Techx offers top-notch website development services, including the dynamic Poclane website. Our development process blends creativity with technology to craft responsive, interactive, and secure websites. By employing the latest tools and techniques, we ensure optimal functionality and aesthetics. Whether it's e-commerce, corporate, or personal websites, BM Techx guarantees solutions that simplify your digital presence and elevate user experience.",
     image: "Banners/p15.png",
   },
   {
-    id: 13,
     title: "Design Info",
     description:
       "Empowering businesses with stunning web solutions, BM Techx proudly developed the Design Info website. We integrate modern web trends and robust technologies to craft visually appealing, SEO-friendly, and mobile-responsive sites. With a focus on functionality and ease of navigation, we ensure websites cater to user expectations while standing out in competitive markets. Partner with us to create impactful websites that drive success.",
@@ -107,7 +108,6 @@ const projects = [
     link: "https://designinfosolution.com/",
   },
   {
-    id: 14,
     title: "BM Academy",
     description:
       "BM Techx proudly undertakes the complete development of BM Academy’s website, bringing their educational vision online. Our team combines innovative design with functionality, ensuring smooth navigation and accessibility. The website includes course listings, registration forms, and interactive features tailored to students and educators alike. Trust us to deliver a digital platform that effectively communicates your academy's values and services.",
@@ -115,20 +115,13 @@ const projects = [
     link: "https://thebmacademy.com/",
   },
   {
-    id: 15,
     title: "College Students Project",
     description:
       "BM Techx presents the College Management System, designed to streamline attendance and marks management for students. This efficient platform ensures accurate record-keeping, easy accessibility, and seamless monitoring, empowering institutions to enhance academic transparency and organization.",
     image: "Banners/p16.png",
   },
-  {
-    id: 16,
-    title: "Bezooz",
-    description:
-      "We at BM Techx designed and developed the Bezooz platform to transform the learning experience. Focused on interactivity and personalized education, we crafted a user-friendly and modern design to empower students and educators alike. With seamless navigation and innovative features, we’ve built a digital space that redefines learning.",
-    image: "Banners/p14.png",
-    link: "https://www.bezooz.com/in",
-  },
+ 
+
 ];
 
 const Case = () => {
@@ -170,7 +163,7 @@ const Case = () => {
         <Container className="case-container">
           {projects.map((project, index) => (
             <Row
-              key={project.id}
+              key={index} // Use index as the key
               ref={(el) => (sectionRefs.current[index] = el)}
               className={`case-row align-items-center ${
                 index % 2 === 0 ? "flex-row-reverse" : ""
@@ -192,9 +185,12 @@ const Case = () => {
                     </span>
                   ))}
                 </p>
-                {/* Show button only if link is available and not "#" */}
                 {project.link && project.link !== "#" && (
-                  <Button className="visit-btn" href={project.link} target="_blank">
+                  <Button
+                    className="visit-btn"
+                    href={project.link}
+                    target="_blank"
+                  >
                     Visit Site <MdOutlineArrowOutward className="ms-2" size={30} />
                   </Button>
                 )}
